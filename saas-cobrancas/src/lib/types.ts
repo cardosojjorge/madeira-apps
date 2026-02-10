@@ -50,7 +50,7 @@ export interface AppUser {
   companyId?: string;
 }
 
-export interface SessionPayload {
+export interface SessionPayload extends Record<string, unknown> {
   userId: string;
   nome: string;
   email: string;
