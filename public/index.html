@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CENTRO DE COMANDO MILITAR // MÉDIO ORIENTE</title>
+
+  <!-- Fontes militares -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- Socket.io -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <!-- Overlay de scanlines -->
+  <div id="scanlines"></div>
+  <!-- Overlay de vinheta -->
+  <div id="vignette"></div>
+
+  <!-- ═══ HEADER ══════════════════════════════════════════════════════════ -->
+  <header id="header">
+    <div class="header-left">
+      <div class="classified-badge">
+        <span class="cls-text">TOP SECRET</span>
+        <span class="cls-sep">//</span>
+        <span class="cls-text">CLASSIFICADO</span>
+      </div>
+      <div class="system-title">
+        <span class="title-main">CENTRO DE COMANDO MILITAR</span>
+        <span class="title-sub">SISTEMA DE RASTREAMENTO DE CONFLITOS — MÉDIO ORIENTE</span>
+      </div>
+    </div>
+
+    <div class="header-center">
+      <div class="global-threat-box" id="global-threat-box">
+        <div class="gt-label">NÍVEL DE AMEAÇA GLOBAL</div>
+        <div class="gt-value blink" id="global-threat-value">CRÍTICO</div>
+        <div class="gt-bars">
+          <div class="gt-bar" id="gt-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <div class="live-indicator">
+        <span class="live-dot pulse-red"></span>
+        <span>AO VIVO</span>
+      </div>
+      <div class="datetime-box">
+        <div class="dt-date" id="hdr-date">--/--/----</div>
+        <div class="dt-time" id="hdr-time">--:--:--</div>
+        <div class="dt-tz">UTC+00:00</div>
+      </div>
+      <div class="conn-status" id="conn-status">
+        <span class="status-dot green" id="status-dot"></span>
+        <span id="status-text">CONECTANDO...</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ MAIN GRID ════════════════════════════════════════════════════════ -->
+  <main id="main-grid">
+
+    <!-- ── PAINEL ESQUERDO ────────────────────────────────────────────── -->
+    <aside id="left-panel">
+
+      <!-- Mini Radar -->
+      <div class="panel-box" id="radar-box">
+        <div class="panel-title">
+          <span class="pt-icon">◉</span> RADAR TÁTICO
+          <span class="pt-badge">ATIVO</span>
+        </div>
+        <div class="radar-wrapper">
+          <canvas id="radarCanvas" width="190" height="190"></canvas>
+          <div class="radar-coords" id="radar-coords">LAT: -- LNG: --</div>
+        </div>
+      </div>
+
+      <!-- Estatísticas -->
+      <div class="panel-box" id="stats-box">
+        <div class="panel-title">
+          <span class="pt-icon">◈</span> ESTATÍSTICAS OPERACIONAIS
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="sc-label">ATAQUES TOTAIS</div>
+            <div class="sc-value" id="st-total">0</div>
+          </div>
+          <div class="stat-card danger">
+            <div class="sc-label">BAIXAS ESTIMADAS</div>
+            <div class="sc-value" id="st-casualties">0</div>
+          </div>
+          <div class="stat-card warning">
+            <div class="sc-label">ZONAS ATIVAS</div>
+            <div class="sc-value" id="st-zones">0</div>
+          </div>
+          <div class="stat-card critical">
+            <div class="sc-label">ALERTAS CRÍTICOS</div>
+            <div class="sc-value blink" id="st-critical">0</div>
+          </div>
+          <div class="stat-card info">
+            <div class="sc-label">INTERCEPÇÕES</div>
+            <div class="sc-value" id="st-intercepted">0</div>
+          </div>
+          <div class="stat-card">
+            <div class="sc-label">ATQ. ÚLTIMA HORA</div>
+            <div class="sc-value accent" id="st-lasthour">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gráfico Tipos de Ataque -->
+      <div class="panel-box" id="type-chart-box">
+        <div class="panel-title">
+          <span class="pt-icon">◆</span> TIPOS DE ATAQUE
+        </div>
+        <div class="chart-wrapper-sm">
+          <canvas id="typeChart"></canvas>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ── PAINEL CENTRAL ─────────────────────────────────────────────── -->
+    <section id="center-panel">
+
+      <!-- Mapa -->
+      <div id="map-box">
+        <div class="panel-title map-title">
+          <span class="pt-icon">⊕</span> MAPA TÁTICO — TEATRO DE OPERAÇÕES
+          <span class="map-coords-disp" id="map-coords-disp">LAT: -- LNG: --</span>
+          <span class="pt-badge">SATÉLITE</span>
+        </div>
+        <div id="map"></div>
+        <!-- Canto superior esquerdo do mapa -->
+        <div class="map-overlay-tl">
+          <div class="mo-line" id="mo-zoom">ZOOM: --</div>
+          <div class="mo-line" id="mo-active-count">MARCADORES: 0</div>
+        </div>
+        <!-- Legenda do mapa -->
+        <div class="map-legend-box">
+          <div class="ml-item"><span class="ml-dot critical-dot"></span>CRÍTICO</div>
+          <div class="ml-item"><span class="ml-dot high-dot"></span>ALTO</div>
+          <div class="ml-item"><span class="ml-dot medium-dot"></span>MÉDIO</div>
+          <div class="ml-item"><span class="ml-dot low-dot"></span>BAIXO</div>
+          <div class="ml-item"><span class="ml-dot intercepted-dot"></span>INTERCETADO</div>
+        </div>
+        <!-- Alerta crítico overlay -->
+        <div id="critical-alert-overlay" class="hidden">
+          <div class="ca-inner">
+            <div class="ca-title blink">⚠ ALERTA CRÍTICO ⚠</div>
+            <div class="ca-desc" id="ca-desc">--</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gráfico Linha do Tempo -->
+      <div class="panel-box" id="timeline-box">
+        <div class="panel-title">
+          <span class="pt-icon">◈</span> LINHA DO TEMPO — ATAQUES POR HORA (ÚLTIMAS 24H)
+        </div>
+        <div class="chart-wrapper-lg">
+          <canvas id="timelineChart"></canvas>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── PAINEL DIREITO ─────────────────────────────────────────────── -->
+    <aside id="right-panel">
+
+      <!-- Ameaças por Região -->
+      <div class="panel-box" id="region-box">
+        <div class="panel-title">
+          <span class="pt-icon">◉</span> AMEAÇAS POR REGIÃO
+        </div>
+        <div id="region-threat-list">
+          <!-- Preenchido por JS -->
+        </div>
+      </div>
+
+      <!-- Gráfico distribuição por país -->
+      <div class="panel-box" id="country-chart-box">
+        <div class="panel-title">
+          <span class="pt-icon">◆</span> DISTRIBUIÇÃO REGIONAL
+        </div>
+        <div class="chart-wrapper-sm">
+          <canvas id="countryChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Log de Ataques -->
+      <div class="panel-box" id="log-box">
+        <div class="panel-title">
+          <span class="pt-icon">▶</span> REGISTO DE ATAQUES
+          <span class="live-badge pulse-red">● LIVE</span>
+        </div>
+        <div id="attack-log">
+          <!-- Preenchido por JS -->
+        </div>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- ═══ TICKER / RODAPÉ ══════════════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="ticker-label">⚡ INTEL</div>
+    <div class="ticker-wrapper">
+      <div class="ticker-track" id="ticker-track">
+        <span class="ticker-item">Aguardando transmissão segura...</span>
+      </div>
+    </div>
+    <div class="footer-right">
+      <span id="footer-atk-count">ATQ: 0</span>
+      <span class="sep">|</span>
+      <span id="footer-time">00:00:00</span>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
