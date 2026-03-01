@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTCOM TACTICAL OPS — Sistema de Rastreamento de Conflitos</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="scanline-overlay"></div>
+    <div id="grid-overlay"></div>
+
+    <header id="top-bar">
+        <div class="header-left">
+            <div class="logo-container">
+                <div class="logo-icon">⬡</div>
+                <div class="logo-text">
+                    <span class="logo-main">CENTCOM</span>
+                    <span class="logo-sub">TACTICAL OPERATIONS CENTER</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="status-group">
+                <div class="status-indicator active"></div>
+                <span class="status-text">SISTEMA OPERACIONAL</span>
+            </div>
+            <div class="threat-level">
+                <span class="threat-label">NÍVEL DE AMEAÇA:</span>
+                <span class="threat-value" id="threat-level">CRÍTICO</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="datetime-block">
+                <div class="date-display" id="date-display">--/--/----</div>
+                <div class="time-display" id="time-display">--:--:--</div>
+                <div class="utc-display" id="utc-display">UTC --:--:--</div>
+            </div>
+            <div class="classification-badge">CLASSIFICADO</div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <aside id="left-panel">
+            <div class="panel-section">
+                <div class="panel-header">
+                    <span class="panel-icon">◈</span>
+                    <span>RESUMO OPERACIONAL</span>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card critical">
+                        <div class="stat-value" id="stat-attacks">0</div>
+                        <div class="stat-label">ATAQUES 24H</div>
+                        <div class="stat-trend" id="trend-attacks">↑ 0%</div>
+                    </div>
+                    <div class="stat-card warning">
+                        <div class="stat-value" id="stat-casualties">0</div>
+                        <div class="stat-label">BAIXAS EST.</div>
+                        <div class="stat-trend" id="trend-casualties">↑ 0%</div>
+                    </div>
+                    <div class="stat-card info">
+                        <div class="stat-value" id="stat-active">0</div>
+                        <div class="stat-label">ZONAS ATIVAS</div>
+                        <div class="stat-trend" id="trend-active">— 0</div>
+                    </div>
+                    <div class="stat-card alert">
+                        <div class="stat-value" id="stat-missiles">0</div>
+                        <div class="stat-label">MÍSSEIS DET.</div>
+                        <div class="stat-trend" id="trend-missiles">↑ 0%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <div class="panel-header">
+                    <span class="panel-icon">◈</span>
+                    <span>TIPOS DE ATAQUE</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="attack-type-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <div class="panel-header">
+                    <span class="panel-icon">◈</span>
+                    <span>ATIVIDADE TEMPORAL</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="timeline-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <div class="panel-header">
+                    <span class="panel-icon">◈</span>
+                    <span>FORÇAS POR REGIÃO</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="region-chart"></canvas>
+                </div>
+            </div>
+        </aside>
+
+        <section id="map-container">
+            <div id="map"></div>
+            <div id="map-hud-top">
+                <div class="hud-element">
+                    <span class="hud-label">LAT:</span>
+                    <span class="hud-value" id="hud-lat">---.----</span>
+                </div>
+                <div class="hud-element">
+                    <span class="hud-label">LON:</span>
+                    <span class="hud-value" id="hud-lon">---.----</span>
+                </div>
+                <div class="hud-element">
+                    <span class="hud-label">ZOOM:</span>
+                    <span class="hud-value" id="hud-zoom">--</span>
+                </div>
+                <div class="hud-element">
+                    <span class="hud-label">ALVOS:</span>
+                    <span class="hud-value" id="hud-targets">--</span>
+                </div>
+            </div>
+            <div id="map-hud-bottom">
+                <div class="map-legend">
+                    <div class="legend-item"><span class="legend-dot airstrike"></span> Ataque Aéreo</div>
+                    <div class="legend-item"><span class="legend-dot missile"></span> Míssil</div>
+                    <div class="legend-item"><span class="legend-dot ground"></span> Terrestre</div>
+                    <div class="legend-item"><span class="legend-dot drone"></span> Drone</div>
+                    <div class="legend-item"><span class="legend-dot naval"></span> Naval</div>
+                    <div class="legend-item"><span class="legend-dot explosion"></span> Explosão</div>
+                </div>
+            </div>
+            <div id="crosshair">
+                <div class="crosshair-line crosshair-h"></div>
+                <div class="crosshair-line crosshair-v"></div>
+                <div class="crosshair-circle"></div>
+            </div>
+        </section>
+
+        <aside id="right-panel">
+            <div class="panel-section">
+                <div class="panel-header">
+                    <span class="panel-icon blink">●</span>
+                    <span>FEED TÁTICO EM TEMPO REAL</span>
+                </div>
+                <div id="event-feed" class="event-feed">
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <div class="panel-header">
+                    <span class="panel-icon">◈</span>
+                    <span>ALERTAS CRÍTICOS</span>
+                </div>
+                <div id="alerts-container" class="alerts-container">
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <div class="panel-header">
+                    <span class="panel-icon">◈</span>
+                    <span>INTENSIDADE POR HORA</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="intensity-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <div class="panel-header">
+                    <span class="panel-icon">◈</span>
+                    <span>RADAR DE AMEAÇAS</span>
+                </div>
+                <div class="radar-container">
+                    <canvas id="radar-canvas"></canvas>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer id="bottom-bar">
+        <div class="footer-left">
+            <span class="footer-label">UPLINK:</span>
+            <span class="footer-value blink-slow">ATIVO</span>
+            <span class="footer-separator">|</span>
+            <span class="footer-label">LATÊNCIA:</span>
+            <span class="footer-value" id="latency-value">--ms</span>
+            <span class="footer-separator">|</span>
+            <span class="footer-label">PACOTES:</span>
+            <span class="footer-value" id="packets-value">0</span>
+        </div>
+        <div class="footer-center">
+            <span class="footer-classified">⚠ SISTEMA DE USO RESTRITO — ACESSO NÃO AUTORIZADO SERÁ PROCESSADO ⚠</span>
+        </div>
+        <div class="footer-right">
+            <span class="footer-label">SATÉLITE:</span>
+            <span class="footer-value">MILSAT-7</span>
+            <span class="footer-separator">|</span>
+            <span class="footer-label">ENCRIPTAÇÃO:</span>
+            <span class="footer-value">AES-256</span>
+        </div>
+    </footer>
+
+    <div id="boot-screen">
+        <div class="boot-content">
+            <div class="boot-logo">⬡ CENTCOM</div>
+            <div class="boot-text" id="boot-text"></div>
+            <div class="boot-progress">
+                <div class="boot-progress-bar" id="boot-progress-bar"></div>
+            </div>
+            <div class="boot-status" id="boot-status">INICIALIZANDO...</div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
