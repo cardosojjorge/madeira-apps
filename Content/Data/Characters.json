@@ -1,0 +1,103 @@
+{
+  "Characters": [
+    {
+      "Id": "CH_ADRIAN",
+      "DisplayName": "Adrian Vale",
+      "Age": 42,
+      "Profession": "CEO",
+      "Theme": "Ambition",
+      "NotebookIntro": "Chief executive of Vale Tower. The nameplate says so. Nothing on it says where the hour went.",
+      "VoiceNote": "Low, controlled, used to being the last person to speak."
+    },
+    {
+      "Id": "CH_MAYA",
+      "DisplayName": "Maya",
+      "Age": 21,
+      "Profession": "Student",
+      "Theme": "Trust",
+      "NotebookIntro": "A student. She was in the lobby before midnight with papers that needed a signature.",
+      "VoiceNote": "Young, careful, out of breath when she is afraid of being late."
+    },
+    {
+      "Id": "CH_DANIEL",
+      "DisplayName": "Daniel Cross",
+      "Age": 51,
+      "Profession": "Detective",
+      "Theme": "Truth",
+      "NotebookIntro": "A detective. His byline is on the evening paper in the boardroom.",
+      "VoiceNote": "Dry, observational, tired of lies that waste the night."
+    },
+    {
+      "Id": "CH_ELENA",
+      "DisplayName": "Elena Moretti",
+      "Age": 39,
+      "Profession": "Doctor",
+      "Theme": "Responsibility",
+      "NotebookIntro": "A doctor. Her name is on a waiver in the desk.",
+      "VoiceNote": "Precise, quiet, the voice of someone who has already given the warning."
+    },
+    {
+      "Id": "CH_LUCAS",
+      "DisplayName": "Lucas",
+      "Age": 34,
+      "Profession": "Photographer / Traveler",
+      "Theme": "Escape",
+      "NotebookIntro": "A photographer. His name is not in this office.",
+      "VoiceNote": "Light, already halfway out of the room."
+    },
+    {
+      "Id": "CH_MARCO",
+      "DisplayName": "Marco",
+      "Age": 47,
+      "Profession": "Chef",
+      "Theme": "Ambition / Sacrifice",
+      "NotebookIntro": "A chef. His name is not in this office.",
+      "VoiceNote": "Warm, crowded, talking over the kitchen."
+    },
+    {
+      "Id": "CH_SOFIA",
+      "DisplayName": "Sofia",
+      "Age": 27,
+      "Profession": "Athlete",
+      "Theme": "Sacrifice",
+      "NotebookIntro": "An athlete. Her name is not in this office.",
+      "VoiceNote": "Short sentences. Breath kept for the next effort."
+    },
+    {
+      "Id": "CH_NINA",
+      "DisplayName": "Nina",
+      "Age": 29,
+      "Profession": "Influencer",
+      "Theme": "Identity",
+      "NotebookIntro": "A public voice. Her name is not in this office.",
+      "VoiceNote": "Bright, performed, a half-second delay as if she is hearing herself."
+    },
+    {
+      "Id": "CH_ELIAS",
+      "DisplayName": "Elias Hart",
+      "Age": 56,
+      "Profession": "Scientist",
+      "Theme": "Control",
+      "NotebookIntro": "A scientist. His name is not in this office.",
+      "VoiceNote": "Measured. He corrects his own units."
+    },
+    {
+      "Id": "CH_CLARA",
+      "DisplayName": "Clara",
+      "Age": 63,
+      "Profession": "Artist",
+      "Theme": "Memory",
+      "NotebookIntro": "The name on the back of an unfinished canvas.",
+      "VoiceNote": "Slow, certain about pictures and uncertain about dates."
+    },
+    {
+      "Id": "CH_STRANGER",
+      "DisplayName": "Stranger",
+      "Age": 0,
+      "Profession": "",
+      "Theme": "",
+      "NotebookIntro": "A silhouette. No face. No name. He does not explain himself.",
+      "VoiceNote": "Deep. Calm. Restrained. Almost compassionate. Never cartoonishly evil."
+    }
+  ]
+}

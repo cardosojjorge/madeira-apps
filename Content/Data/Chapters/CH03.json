@@ -1,0 +1,766 @@
+{
+  "ChapterID": "CH03",
+  "Title": "Truth",
+  "Logline": "A detective lays ten nights on one table and refuses the easy name.",
+  "Playable": false,
+  "ProtagonistId": "CH_DANIEL",
+  "Theme": "Truth",
+  "ColourSaturation": 0.18,
+  "Clock": "23:47",
+  "CoinBeat": "Daniel identifies the coin.",
+  "HourglassBeat": "The hourglass appears in a crime-scene photograph Daniel cannot date.",
+  "StrangerStage": "Voice",
+  "CrossChapterRefs": [
+    {
+      "Id": "CH03_COIN",
+      "TargetChapter": "ALL",
+      "Kind": "coin",
+      "Note": "Daniel identifies the coin as the same object in unrelated files."
+    },
+    {
+      "Id": "CH03_GLASS",
+      "TargetChapter": "ALL",
+      "Kind": "hourglass",
+      "Note": "The hourglass is in a photograph he cannot date."
+    },
+    {
+      "Id": "CH03_MAYA",
+      "TargetChapter": "CH02",
+      "Kind": "newspaper",
+      "Note": "Maya's statement is in the file, and his own column is the paper Adrian read."
+    },
+    {
+      "Id": "CH03_ELENA",
+      "TargetChapter": "CH04",
+      "Kind": "symbol",
+      "Note": "Elena's waiver is exhibit C."
+    }
+  ],
+  "Locations": [
+    {
+      "LocationId": "LOC_CH03",
+      "Name": "Daniel Cross — recorded room",
+      "Description": "A detective lays ten nights on one table and refuses the easy name.",
+      "Origin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "SizeX": 1200,
+      "SizeY": 900,
+      "Height": 400,
+      "Corridor": false,
+      "OpenEast": false,
+      "OpenWest": false,
+      "OpenNorth": false,
+      "OpenSouth": false,
+      "Spawn": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "SpawnYaw": 0,
+      "Props": [],
+      "Lights": [
+        {
+          "Position": {
+            "X": 400,
+            "Y": 400,
+            "Z": 250
+          },
+          "Color": "7F97A8",
+          "Intensity": 800,
+          "Radius": 600
+        }
+      ]
+    }
+  ],
+  "Cards": [
+    {
+      "CardID": "CH03_CARD_01",
+      "ChapterID": "CH03",
+      "Title": "The Hour",
+      "Scene": "The Hour",
+      "Location": "LOC_CH03",
+      "Time": "23:11",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_02"
+      ],
+      "Body": "A detective lays ten nights on one table and refuses the easy name.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_02",
+      "ChapterID": "CH03",
+      "Title": "The Room",
+      "Scene": "The Room",
+      "Location": "LOC_CH03",
+      "Time": "23:12",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_03"
+      ],
+      "Body": "A detective lays ten nights on one table and refuses the easy name.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_03",
+      "ChapterID": "CH03",
+      "Title": "The Paper",
+      "Scene": "The Paper",
+      "Location": "LOC_CH03",
+      "Time": "23:13",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_04"
+      ],
+      "Body": "A detective lays ten nights on one table and refuses the easy name.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_04",
+      "ChapterID": "CH03",
+      "Title": "The Coin",
+      "Scene": "The Coin",
+      "Location": "LOC_CH03",
+      "Time": "23:14",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_05"
+      ],
+      "Body": "Daniel identifies the coin.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_05",
+      "ChapterID": "CH03",
+      "Title": "The Voice",
+      "Scene": "The Voice",
+      "Location": "LOC_CH03",
+      "Time": "23:15",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_06"
+      ],
+      "Body": "A detective lays ten nights on one table and refuses the easy name.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_06",
+      "ChapterID": "CH03",
+      "Title": "The Passage",
+      "Scene": "The Passage",
+      "Location": "LOC_CH03",
+      "Time": "23:16",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_07"
+      ],
+      "Body": "A detective lays ten nights on one table and refuses the easy name.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_07",
+      "ChapterID": "CH03",
+      "Title": "The Memory",
+      "Scene": "The Memory",
+      "Location": "LOC_CH03",
+      "Time": "23:17",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_08"
+      ],
+      "Body": "A detective lays ten nights on one table and refuses the easy name.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_08",
+      "ChapterID": "CH03",
+      "Title": "The Branch",
+      "Scene": "The Branch",
+      "Location": "LOC_CH03",
+      "Time": "23:18",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [
+        "CHOICE_CH03_A",
+        "CHOICE_CH03_B"
+      ],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_09"
+      ],
+      "Body": "The earlier choice is still in the room. Changing it changes what the record holds.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_09",
+      "ChapterID": "CH03",
+      "Title": "The Figure",
+      "Scene": "The Figure",
+      "Location": "LOC_CH03",
+      "Time": "23:19",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [
+        "DLG_CH03_FIGURE"
+      ],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_10"
+      ],
+      "Body": "The stranger is present as Voice. He does not solve the night.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_10",
+      "ChapterID": "CH03",
+      "Title": "The Glass",
+      "Scene": "The Glass",
+      "Location": "LOC_CH03",
+      "Time": "23:20",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_11"
+      ],
+      "Body": "The hourglass appears in a crime-scene photograph Daniel cannot date.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_11",
+      "ChapterID": "CH03",
+      "Title": "The Threshold",
+      "Scene": "The Threshold",
+      "Location": "LOC_CH03",
+      "Time": "23:21",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "enter:LOC_CH03"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH03_CARD_12"
+      ],
+      "Body": "A detective lays ten nights on one table and refuses the easy name.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH03_CARD_12",
+      "ChapterID": "CH03",
+      "Title": "The Record",
+      "Scene": "The Record",
+      "Location": "LOC_CH03",
+      "Time": "23:55",
+      "Characters": [
+        "CH_DANIEL"
+      ],
+      "Objectives": [
+        "discover:CH03_CLUE_A|CH03_CLUE_B"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [],
+      "Body": "The chapter is recorded. It is not open.",
+      "Variants": [
+        {
+          "Id": "V_CH03_A",
+          "IfAll": [
+            {
+              "Flag": "Outcome",
+              "Equals": "A"
+            }
+          ],
+          "Body": "The record keeps outcome A. The other page is no longer the one on the table."
+        },
+        {
+          "Id": "V_CH03_B",
+          "IfAll": [
+            {
+              "Flag": "Outcome",
+              "Equals": "B"
+            }
+          ],
+          "Body": "The record keeps outcome B. What was signed, trusted, or refused has changed the page."
+        }
+      ]
+    }
+  ],
+  "Clues": [
+    {
+      "ClueID": "CH03_CLUE_MAIN",
+      "ChapterID": "CH03",
+      "CardID": "CH03_CARD_01",
+      "Title": "Recorded trace",
+      "Description": "A detective lays ten nights on one table and refuses the easy name.",
+      "Location": "LOC_CH03",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_DANIEL"
+      ],
+      "RelatedEvents": [
+        "TL_CH03_1"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "MEM_CH03",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CH03_CLUE_A",
+      "ChapterID": "CH03",
+      "CardID": "CH03_CARD_12",
+      "Title": "Outcome A",
+      "Description": "The page that remains when the first choice stands.",
+      "Location": "LOC_CH03",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_DANIEL"
+      ],
+      "RelatedEvents": [
+        "TL_CH03_2"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "Outcome",
+          "Equals": "A"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CH03_CLUE_B",
+      "ChapterID": "CH03",
+      "CardID": "CH03_CARD_12",
+      "Title": "Outcome B",
+      "Description": "The page that remains when the later choice stands.",
+      "Location": "LOC_CH03",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_DANIEL"
+      ],
+      "RelatedEvents": [
+        "TL_CH03_2"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "Outcome",
+          "Equals": "B"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    }
+  ],
+  "Dialogue": [
+    {
+      "DialogueID": "DLG_CH03_FIGURE",
+      "Speaker": "CH_STRANGER",
+      "Text": "You don't have much time.",
+      "Choices": [
+        {
+          "ChoiceID": "CHOICE_CH03_A",
+          "Text": "Stay with what was asked.",
+          "BranchGroup": "BRANCH_OUTCOME",
+          "ConsequenceID": "CONS_CH03_A",
+          "NextNode": "DLG_CH03_RESP_A",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_CH03_B",
+          "Text": "Leave it for later.",
+          "BranchGroup": "BRANCH_OUTCOME",
+          "ConsequenceID": "CONS_CH03_B",
+          "NextNode": "DLG_CH03_RESP_B",
+          "Requirements": []
+        }
+      ],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_CH03_RESP_A",
+      "Speaker": "CH_STRANGER",
+      "Text": "Then the page will keep your hand.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_CH03_RESP_B",
+      "Speaker": "CH_STRANGER",
+      "Text": "Later is how a name goes missing.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    }
+  ],
+  "Consequences": [
+    {
+      "Id": "CONS_CH03_A",
+      "SetFlags": {
+        "Outcome": "A"
+      },
+      "Soul": {
+        "Empathy": 1
+      },
+      "RevealClues": [
+        "CH03_CLUE_A"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": true,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_CH03_B",
+      "SetFlags": {
+        "Outcome": "B"
+      },
+      "Soul": {
+        "Courage": 1
+      },
+      "RevealClues": [
+        "CH03_CLUE_B"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    }
+  ],
+  "Memories": [
+    {
+      "MemoryID": "MEM_CH03",
+      "ChapterID": "CH03",
+      "CardID": "CH03_CARD_07",
+      "QuestionAnswered": "Daniel Cross was already holding the thread this chapter exists to remember.",
+      "QuestionOpened": "What the coin was doing in this room is not yet playable.",
+      "RequiredClue": "CH03_CLUE_MAIN",
+      "TimelineEventID": "TL_CH03_1",
+      "EntryLocationId": "LOC_CH03",
+      "EntryPosition": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "HoldLine": "The memory is still holding something.",
+      "Playable": false
+    }
+  ],
+  "Timeline": [
+    {
+      "EventID": "TL_CH03_1",
+      "ChapterID": "CH03",
+      "Time": "23:10",
+      "Title": "First mark",
+      "LocationId": "LOC_CH03",
+      "Position": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": true,
+      "Branches": [],
+      "UnlockOnClue": "CH03_CLUE_MAIN"
+    },
+    {
+      "EventID": "TL_CH03_2",
+      "ChapterID": "CH03",
+      "Time": "23:30",
+      "Title": "The branch",
+      "LocationId": "LOC_CH03",
+      "Position": {
+        "X": 500,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": true,
+      "Branches": [
+        {
+          "ChoiceID": "CHOICE_CH03_A",
+          "Label": "STAY"
+        },
+        {
+          "ChoiceID": "CHOICE_CH03_B",
+          "Label": "LEAVE"
+        }
+      ],
+      "UnlockOnClue": ""
+    },
+    {
+      "EventID": "TL_CH03_3",
+      "ChapterID": "CH03",
+      "Time": "23:55",
+      "Title": "The record",
+      "LocationId": "LOC_CH03",
+      "Position": {
+        "X": 700,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": false,
+      "Branches": [],
+      "UnlockOnClue": ""
+    }
+  ],
+  "Interactables": [
+    {
+      "Id": "INT_CH03_NOTE",
+      "LocationId": "LOC_CH03",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Recorded note",
+      "InspectText": "A detective lays ten nights on one table and refuses the easy name.",
+      "ClueID": "CH03_CLUE_MAIN",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 500,
+        "Y": 450,
+        "Z": 90
+      },
+      "Scale": {
+        "X": 0.3,
+        "Y": 0.3,
+        "Z": 0.3
+      },
+      "Mesh": "Cube",
+      "Color": "1A1C22",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH03_CARD_01",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    }
+  ],
+  "MusicIdentity": "stub",
+  "MusicLayers": [
+    "rain",
+    "piano"
+  ]
+}

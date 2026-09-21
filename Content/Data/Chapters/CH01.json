@@ -1,0 +1,3215 @@
+{
+  "ChapterID": "CH01",
+  "Title": "Ambition",
+  "Logline": "A man wakes in his office at 23:47 and cannot remember the hour he lost.",
+  "Playable": true,
+  "ProtagonistId": "CH_ADRIAN",
+  "Theme": "Ambition",
+  "ColourSaturation": 0.1,
+  "Clock": "23:47",
+  "CoinBeat": "Adrian discovers the coin.",
+  "HourglassBeat": "An hourglass in the boardroom is nearly empty, and still only atmospheric.",
+  "StrangerStage": "Silhouette",
+  "CrossChapterRefs": [
+    {
+      "Id": "CH01_REF_COIN",
+      "TargetChapter": "ALL",
+      "Kind": "coin",
+      "Note": "Adrian discovers the coin under the blotter. Every later chapter meets the same object."
+    },
+    {
+      "Id": "CH01_REF_GLASS",
+      "TargetChapter": "ALL",
+      "Kind": "hourglass",
+      "Note": "The boardroom hourglass is borrowed time, still only atmospheric."
+    },
+    {
+      "Id": "CH01_REF_MAYA",
+      "TargetChapter": "CH02",
+      "Kind": "figure",
+      "Note": "Maya, the student in the lobby, is the protagonist of Chapter 02."
+    },
+    {
+      "Id": "CH01_REF_ELENA",
+      "TargetChapter": "CH04",
+      "Kind": "symbol",
+      "Note": "Elena Moretti's waiver is already in the desk."
+    },
+    {
+      "Id": "CH01_REF_DANIEL",
+      "TargetChapter": "CH03",
+      "Kind": "newspaper",
+      "Note": "Daniel Cross's evening column is in the boardroom."
+    },
+    {
+      "Id": "CH01_REF_CLARA",
+      "TargetChapter": "CH10",
+      "Kind": "painting",
+      "Note": "Clara's unfinished canvas already contains the coin."
+    },
+    {
+      "Id": "CH01_REF_PHRASE",
+      "TargetChapter": "ALL",
+      "Kind": "phrase",
+      "Note": "You don't have much time. You shouldn't open that door."
+    }
+  ],
+  "Locations": [
+    {
+      "LocationId": "LOC_OFFICE",
+      "Name": "Vale Tower — office",
+      "Description": "A corner office above a rain-soaked city. The carpet remembers someone's knees.",
+      "Origin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "SizeX": 1600,
+      "SizeY": 1400,
+      "Height": 420,
+      "Corridor": false,
+      "OpenEast": true,
+      "OpenWest": false,
+      "OpenNorth": false,
+      "OpenSouth": false,
+      "Spawn": {
+        "X": 380,
+        "Y": 700,
+        "Z": 120
+      },
+      "SpawnYaw": 0,
+      "Props": [
+        {
+          "Mesh": "Cube",
+          "Position": {
+            "X": 760,
+            "Y": 780,
+            "Z": 40
+          },
+          "Scale": {
+            "X": 1.8,
+            "Y": 0.9,
+            "Z": 0.8
+          },
+          "Color": "14161C",
+          "BlocksPlayer": true
+        },
+        {
+          "Mesh": "Cube",
+          "Position": {
+            "X": 1180,
+            "Y": 400,
+            "Z": 45
+          },
+          "Scale": {
+            "X": 0.5,
+            "Y": 0.5,
+            "Z": 0.9
+          },
+          "Color": "101216",
+          "BlocksPlayer": true
+        },
+        {
+          "Mesh": "Cube",
+          "Position": {
+            "X": 500,
+            "Y": 1240,
+            "Z": 110
+          },
+          "Scale": {
+            "X": 1.6,
+            "Y": 0.35,
+            "Z": 0.9
+          },
+          "Color": "12141A",
+          "BlocksPlayer": true
+        },
+        {
+          "Mesh": "Cube",
+          "Position": {
+            "X": 200,
+            "Y": -80,
+            "Z": 160
+          },
+          "Scale": {
+            "X": 2.2,
+            "Y": 0.4,
+            "Z": 3.2
+          },
+          "Color": "07080C",
+          "BlocksPlayer": false
+        },
+        {
+          "Mesh": "Cube",
+          "Position": {
+            "X": 700,
+            "Y": -160,
+            "Z": 200
+          },
+          "Scale": {
+            "X": 1.2,
+            "Y": 0.4,
+            "Z": 4.2
+          },
+          "Color": "05060A",
+          "BlocksPlayer": false
+        },
+        {
+          "Mesh": "Cube",
+          "Position": {
+            "X": 1200,
+            "Y": -40,
+            "Z": 120
+          },
+          "Scale": {
+            "X": 1.4,
+            "Y": 0.3,
+            "Z": 2.2
+          },
+          "Color": "0A1014",
+          "BlocksPlayer": false
+        }
+      ],
+      "Lights": [
+        {
+          "Position": {
+            "X": 760,
+            "Y": 780,
+            "Z": 230
+          },
+          "Color": "FFD2A1",
+          "Intensity": 1400,
+          "Radius": 520
+        },
+        {
+          "Position": {
+            "X": 400,
+            "Y": 200,
+            "Z": 280
+          },
+          "Color": "7F97A8",
+          "Intensity": 900,
+          "Radius": 900
+        }
+      ]
+    },
+    {
+      "LocationId": "LOC_CORRIDOR",
+      "Name": "East corridor",
+      "Description": "A narrow corridor. Wet footprints point both ways and agree on nothing.",
+      "Origin": {
+        "X": 1600,
+        "Y": 560,
+        "Z": 0
+      },
+      "SizeX": 2200,
+      "SizeY": 280,
+      "Height": 360,
+      "Corridor": true,
+      "OpenEast": true,
+      "OpenWest": true,
+      "OpenNorth": true,
+      "OpenSouth": false,
+      "Spawn": {
+        "X": 1800,
+        "Y": 700,
+        "Z": 120
+      },
+      "SpawnYaw": 0,
+      "Props": [
+        {
+          "Mesh": "Cube",
+          "Position": {
+            "X": 2500,
+            "Y": 620,
+            "Z": 20
+          },
+          "Scale": {
+            "X": 2.0,
+            "Y": 0.35,
+            "Z": 0.04
+          },
+          "Color": "0E1218",
+          "BlocksPlayer": false
+        }
+      ],
+      "Lights": [
+        {
+          "Position": {
+            "X": 2500,
+            "Y": 700,
+            "Z": 300
+          },
+          "Color": "6E8EA8",
+          "Intensity": 700,
+          "Radius": 700
+        }
+      ]
+    },
+    {
+      "LocationId": "LOC_BOARDROOM",
+      "Name": "Boardroom",
+      "Description": "A glass room set for an announcement nobody stayed to make.",
+      "Origin": {
+        "X": 2150,
+        "Y": 840,
+        "Z": 0
+      },
+      "SizeX": 1100,
+      "SizeY": 900,
+      "Height": 420,
+      "Corridor": false,
+      "OpenEast": false,
+      "OpenWest": false,
+      "OpenNorth": false,
+      "OpenSouth": true,
+      "Spawn": {
+        "X": 2700,
+        "Y": 1100,
+        "Z": 120
+      },
+      "SpawnYaw": 90,
+      "Props": [
+        {
+          "Mesh": "Cube",
+          "Position": {
+            "X": 2700,
+            "Y": 1240,
+            "Z": 40
+          },
+          "Scale": {
+            "X": 2.2,
+            "Y": 0.9,
+            "Z": 0.8
+          },
+          "Color": "12141A",
+          "BlocksPlayer": true
+        }
+      ],
+      "Lights": [
+        {
+          "Position": {
+            "X": 2700,
+            "Y": 1300,
+            "Z": 260
+          },
+          "Color": "C4A574",
+          "Intensity": 600,
+          "Radius": 500
+        }
+      ]
+    },
+    {
+      "LocationId": "LOC_STAIR",
+      "Name": "Roof landing",
+      "Description": "The last door on the floor. Rain has opinions about the seam.",
+      "Origin": {
+        "X": 3800,
+        "Y": 560,
+        "Z": 0
+      },
+      "SizeX": 800,
+      "SizeY": 280,
+      "Height": 360,
+      "Corridor": true,
+      "OpenEast": false,
+      "OpenWest": true,
+      "OpenNorth": false,
+      "OpenSouth": false,
+      "Spawn": {
+        "X": 3950,
+        "Y": 700,
+        "Z": 120
+      },
+      "SpawnYaw": 0,
+      "Props": [],
+      "Lights": [
+        {
+          "Position": {
+            "X": 4200,
+            "Y": 700,
+            "Z": 260
+          },
+          "Color": "5A6A78",
+          "Intensity": 500,
+          "Radius": 400
+        }
+      ]
+    },
+    {
+      "LocationId": "LOC_LOBBY",
+      "Name": "Lobby, 23:15",
+      "Description": "The tower lobby, earlier than the office. The rain is inside the light.",
+      "Origin": {
+        "X": 0,
+        "Y": 3200,
+        "Z": 0
+      },
+      "SizeX": 1800,
+      "SizeY": 1400,
+      "Height": 480,
+      "Corridor": false,
+      "OpenEast": false,
+      "OpenWest": false,
+      "OpenNorth": false,
+      "OpenSouth": false,
+      "Spawn": {
+        "X": 420,
+        "Y": 3900,
+        "Z": 120
+      },
+      "SpawnYaw": 0,
+      "Props": [
+        {
+          "Mesh": "Cube",
+          "Position": {
+            "X": 900,
+            "Y": 4100,
+            "Z": 40
+          },
+          "Scale": {
+            "X": 1.4,
+            "Y": 0.5,
+            "Z": 0.8
+          },
+          "Color": "161A20",
+          "BlocksPlayer": true
+        },
+        {
+          "Mesh": "Cube",
+          "Position": {
+            "X": 200,
+            "Y": 4300,
+            "Z": 180
+          },
+          "Scale": {
+            "X": 0.4,
+            "Y": 0.4,
+            "Z": 3.6
+          },
+          "Color": "101820",
+          "BlocksPlayer": false
+        }
+      ],
+      "Lights": [
+        {
+          "Position": {
+            "X": 900,
+            "Y": 3900,
+            "Z": 300
+          },
+          "Color": "D7C4A4",
+          "Intensity": 1100,
+          "Radius": 700
+        }
+      ]
+    }
+  ],
+  "Cards": [
+    {
+      "CardID": "CH01_CARD_01",
+      "ChapterID": "CH01",
+      "Title": "THE AWAKENING",
+      "Scene": "Office floor",
+      "Location": "LOC_OFFICE",
+      "Time": "23:47",
+      "Characters": [
+        "CH_ADRIAN"
+      ],
+      "Objectives": [
+        "inspect:INT_CLOCK"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH01_CARD_02"
+      ],
+      "Body": "The carpet is wet at the knees. The office has kept the rain out and the hour in. A clock on the shelf is not blinking. It is simply stopped.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_02",
+      "ChapterID": "CH01",
+      "Title": "THE ROOM",
+      "Scene": "Office",
+      "Location": "LOC_OFFICE",
+      "Time": "23:47",
+      "Characters": [
+        "CH_ADRIAN"
+      ],
+      "Objectives": [
+        "discover:CLUE_PHOTO",
+        "discover:CLUE_NAMEPLATE"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH01_CARD_03"
+      ],
+      "Body": "The room knows his name better than he does. Glass, a desk, a photograph that has lost a face.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_03",
+      "ChapterID": "CH01",
+      "Title": "THE DESK",
+      "Scene": "Desk",
+      "Location": "LOC_OFFICE",
+      "Time": "23:47",
+      "Characters": [
+        "CH_ADRIAN"
+      ],
+      "Objectives": [
+        "discover:CLUE_CONTRACT"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "Close",
+      "NextCards": [
+        "CH01_CARD_04"
+      ],
+      "Body": "Papers for a night that was supposed to end in a signature. Some of them have already been handled. Some of them have not.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_04",
+      "ChapterID": "CH01",
+      "Title": "THE COIN",
+      "Scene": "Desk blotter",
+      "Location": "LOC_OFFICE",
+      "Time": "23:47",
+      "Characters": [
+        "CH_ADRIAN"
+      ],
+      "Objectives": [
+        "discover:CLUE_COIN"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "Close",
+      "NextCards": [
+        "CH01_CARD_05"
+      ],
+      "Body": "Something small has been waiting under the blotter. It is not a key. He is the one who finds it.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_05",
+      "ChapterID": "CH01",
+      "Title": "THE MESSAGE",
+      "Scene": "Telephone",
+      "Location": "LOC_OFFICE",
+      "Time": "23:47",
+      "Characters": [
+        "CH_ADRIAN"
+      ],
+      "Objectives": [
+        "dialogue:DLG_RESP_REPLAY|dialogue:DLG_RESP_SAVE"
+      ],
+      "Clues": [],
+      "Dialogue": [
+        "DLG_PHONE"
+      ],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "phones",
+        "rain"
+      ],
+      "Camera": "Close",
+      "NextCards": [
+        "CH01_CARD_06"
+      ],
+      "Body": "The phone has one message and the patience of a machine. The voice is young. The time is 23:12.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_06",
+      "ChapterID": "CH01",
+      "Title": "THE CORRIDOR",
+      "Scene": "Corridor",
+      "Location": "LOC_CORRIDOR",
+      "Time": "23:47",
+      "Characters": [
+        "CH_ADRIAN"
+      ],
+      "Objectives": [
+        "discover:CLUE_UMBRELLA"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "Corridor",
+      "NextCards": [
+        "CH01_CARD_07"
+      ],
+      "Body": "The corridor is narrower than the decision that filled it. Water has been walked in and not walked back.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_07",
+      "ChapterID": "CH01",
+      "Title": "THE FLASHBACK",
+      "Scene": "Lobby, earlier",
+      "Location": "LOC_LOBBY",
+      "Time": "23:15",
+      "Characters": [
+        "CH_ADRIAN",
+        "CH_MAYA"
+      ],
+      "Objectives": [
+        "flashback:MEM_LOBBY",
+        "discover:CLUE_STATEMENT"
+      ],
+      "Clues": [
+        "CLUE_STATEMENT"
+      ],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [
+        "MEM_LOBBY"
+      ],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "whispers"
+      ],
+      "Camera": "Flashback",
+      "NextCards": [
+        "CH01_CARD_08"
+      ],
+      "Body": "Colour leaves, then a little of it returns. The lobby is earlier than this room. She is still there.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_08",
+      "ChapterID": "CH01",
+      "Title": "THE BRANCH",
+      "Scene": "Timeline",
+      "Location": "LOC_CORRIDOR",
+      "Time": "23:15",
+      "Characters": [
+        "CH_ADRIAN"
+      ],
+      "Objectives": [
+        "commit:BRANCH_MAYA",
+        "open:TIMELINE"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [
+        "CHOICE_HELP_MAYA",
+        "CHOICE_IGNORE_MAYA"
+      ],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH01_CARD_09"
+      ],
+      "Body": "23:15 can be visited. What he does with her papers will still be on the desk when the hour is late.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_09",
+      "ChapterID": "CH01",
+      "Title": "THE STRANGER",
+      "Scene": "Corridor end",
+      "Location": "LOC_CORRIDOR",
+      "Time": "23:47",
+      "Characters": [
+        "CH_ADRIAN",
+        "CH_STRANGER"
+      ],
+      "Objectives": [
+        "dialogue:DLG_RESP_ACCUSE|dialogue:DLG_RESP_HOW|dialogue:DLG_RESP_DOOR|dialogue:DLG_RESP_COIN"
+      ],
+      "Clues": [],
+      "Dialogue": [
+        "DLG_STRANGER"
+      ],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "whispers",
+        "rain"
+      ],
+      "Camera": "Conversation",
+      "NextCards": [
+        "CH01_CARD_10"
+      ],
+      "Body": "A man with no face stands where the light fails. He speaks like a threat. He speaks like a warning.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_10",
+      "ChapterID": "CH01",
+      "Title": "THE HOURGLASS",
+      "Scene": "Boardroom",
+      "Location": "LOC_BOARDROOM",
+      "Time": "23:47",
+      "Characters": [
+        "CH_ADRIAN"
+      ],
+      "Objectives": [
+        "discover:CLUE_HOURGLASS"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH01_CARD_11"
+      ],
+      "Body": "The boardroom is set for no one. The sand in the glass has almost finished agreeing with the clock.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_11",
+      "ChapterID": "CH01",
+      "Title": "THE DOOR",
+      "Scene": "Roof door",
+      "Location": "LOC_STAIR",
+      "Time": "23:47",
+      "Characters": [
+        "CH_ADRIAN"
+      ],
+      "Objectives": [
+        "commit:BRANCH_DOOR"
+      ],
+      "Clues": [],
+      "Dialogue": [
+        "DLG_DOOR"
+      ],
+      "Choices": [
+        "CHOICE_OPEN_DOOR",
+        "CHOICE_LEAVE_DOOR"
+      ],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "Low",
+      "NextCards": [
+        "CH01_CARD_12"
+      ],
+      "Body": "He was told not to open it. The bar is cold. The rain is on the other side, and so is whatever he wants.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH01_CARD_12",
+      "ChapterID": "CH01",
+      "Title": "THE HOUR",
+      "Scene": "Office, 23:55",
+      "Location": "LOC_OFFICE",
+      "Time": "23:55",
+      "Characters": [
+        "CH_ADRIAN"
+      ],
+      "Objectives": [
+        "discover:CLUE_FINAL_HS|discover:CLUE_FINAL_HO|discover:CLUE_FINAL_IS|discover:CLUE_FINAL_IO"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "clocks",
+        "rain",
+        "piano"
+      ],
+      "Camera": "Close",
+      "NextCards": [],
+      "Body": "The clock moves once, to 23:55. The office keeps what the hour made of him.",
+      "Variants": [
+        {
+          "Id": "V_HELP_SHUT",
+          "IfAll": [
+            {
+              "Flag": "MayaOutcome",
+              "Equals": "Helped"
+            },
+            {
+              "Flag": "DoorOutcome",
+              "Equals": "Shut"
+            }
+          ],
+          "Body": "The contract is stamped DELAYED. A student card lies in the ink. The roof door is still shut. The clock says 23:55, and the memo has nowhere to put his name."
+        },
+        {
+          "Id": "V_HELP_OPEN",
+          "IfAll": [
+            {
+              "Flag": "MayaOutcome",
+              "Equals": "Helped"
+            },
+            {
+              "Flag": "DoorOutcome",
+              "Equals": "Open"
+            }
+          ],
+          "Body": "The contract is stamped DELAYED. The roof door has been opened onto the rain. A wet print crosses the memo. The clock says 23:55."
+        },
+        {
+          "Id": "V_IGNORE_SHUT",
+          "IfAll": [
+            {
+              "Flag": "MayaOutcome",
+              "Equals": "Ignored"
+            },
+            {
+              "Flag": "DoorOutcome",
+              "Equals": "Shut"
+            }
+          ],
+          "Body": "The contract is stamped EXECUTED, 23:16. The phone holds a sentence that ends in blank paper. The roof door is shut. The clock says 23:55."
+        },
+        {
+          "Id": "V_IGNORE_OPEN",
+          "IfAll": [
+            {
+              "Flag": "MayaOutcome",
+              "Equals": "Ignored"
+            },
+            {
+              "Flag": "DoorOutcome",
+              "Equals": "Open"
+            }
+          ],
+          "Body": "The contract is stamped EXECUTED, 23:16. The roof door stands open. One shoe is on the landing. The clock says 23:55, and the second glass was never filled."
+        }
+      ]
+    }
+  ],
+  "Clues": [
+    {
+      "ClueID": "CLUE_CLOCK",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_01",
+      "Title": "Stopped clock",
+      "Description": "The shelf clock reads 23:47. The second hand is not trying. Rain ticks louder than it does.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "temporal",
+      "RelatedCharacters": [],
+      "RelatedEvents": [
+        "TL_2347"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_PHOTO",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_02",
+      "Title": "Photograph without a face",
+      "Description": "A framed photograph on the north wall. The room, the suit, the rain in the glass are still there. The face has been eaten down to a pale blank.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "photographic",
+      "RelatedCharacters": [],
+      "RelatedEvents": [],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_NAMEPLATE",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_02",
+      "Title": "Nameplate",
+      "Description": "ADRIAN VALE. CHIEF EXECUTIVE. The letters are clean. A second line under the title has been scraped until the metal shows.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "physical",
+      "RelatedCharacters": [
+        "CH_ADRIAN"
+      ],
+      "RelatedEvents": [],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_RAIN",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_02",
+      "Title": "Rain on the glass",
+      "Description": "The city is a black strip under the window. A few signs keep a little colour. The rest of the night has given it up.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "environmental",
+      "RelatedCharacters": [],
+      "RelatedEvents": [],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "minor",
+      "Optional": true,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {
+        "Curiosity": 1
+      }
+    },
+    {
+      "ClueID": "CLUE_CONTRACT",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_03",
+      "Title": "Northline contract",
+      "Description": "A consolidation agreement for Northline Transit. The signature line is still open. A time has been pencilled in the margin: before midnight.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [],
+      "RelatedEvents": [],
+      "RelatedClues": [
+        "CLUE_STATEMENT"
+      ],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_WAIVER",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_03",
+      "Title": "Waiver",
+      "Description": "A medical waiver clipped behind the contract. Dr. Elena Moretti advises the patient named on the first line against strain after dusk. The second name has been scraped away.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_ELENA",
+        "CH_ADRIAN"
+      ],
+      "RelatedEvents": [],
+      "RelatedClues": [
+        "CLUE_CONTRACT"
+      ],
+      "MemoryReference": "",
+      "Importance": "major",
+      "Optional": true,
+      "Hidden": true,
+      "BranchExclusive": false,
+      "CrossChapter": true,
+      "CrossTarget": "CH04",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {
+        "Curiosity": 1
+      }
+    },
+    {
+      "ClueID": "CLUE_TORN_CARD",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_03",
+      "Title": "Torn card",
+      "Description": "A story card torn through the title. The visible print reads CARD 0 and then nothing. The rest of the line is a blank bite.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "physical",
+      "RelatedCharacters": [],
+      "RelatedEvents": [],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "minor",
+      "Optional": true,
+      "Hidden": true,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {
+        "Curiosity": 1
+      }
+    },
+    {
+      "ClueID": "CLUE_MISSING_NAME",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_03",
+      "Title": "Plaque with no name",
+      "Description": "A small plaque by the door. The screw holes are there. The name is not. Someone took the time to lift the letters and not replace them.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "visual",
+      "RelatedCharacters": [],
+      "RelatedEvents": [],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "minor",
+      "Optional": true,
+      "Hidden": true,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {
+        "Curiosity": 1
+      }
+    },
+    {
+      "ClueID": "CLUE_COIN",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_04",
+      "Title": "The coin",
+      "Description": "A coin under the blotter. One face is blank. The other is worn into the shape of an hourglass. Nobody put it in his hand. He found it.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "physical",
+      "RelatedCharacters": [],
+      "RelatedEvents": [
+        "TL_2330"
+      ],
+      "RelatedClues": [
+        "CLUE_HOURGLASS"
+      ],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": true,
+      "CrossTarget": "ALL",
+      "ActiveIf": [],
+      "GrantFlag": "HasCoin",
+      "GrantValue": "Found",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {
+        "Curiosity": 1
+      }
+    },
+    {
+      "ClueID": "CLUE_VOICEMAIL",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_05",
+      "Title": "Voicemail, 23:12",
+      "Description": "Maya's voice, careful, out of breath. She is in the lobby. She says the papers have to be signed before midnight or the page goes blank.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "audio",
+      "RelatedCharacters": [
+        "CH_MAYA"
+      ],
+      "RelatedEvents": [
+        "TL_2312"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_BREATH",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_05",
+      "Title": "Second voice",
+      "Description": "Under the last three seconds of the voicemail, rain, and a second voice, too low to belong to Maya. It says she does not have much time. It does not say what to do.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "audio",
+      "RelatedCharacters": [
+        "CH_MAYA",
+        "CH_STRANGER"
+      ],
+      "RelatedEvents": [],
+      "RelatedClues": [
+        "CLUE_VOICEMAIL",
+        "CLUE_SILHOUETTE"
+      ],
+      "MemoryReference": "",
+      "Importance": "minor",
+      "Optional": true,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {
+        "Curiosity": 1
+      }
+    },
+    {
+      "ClueID": "CLUE_COAT",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_02",
+      "Title": "Wet coat",
+      "Description": "The coat on the chair is still wet at the shoulders. A lobby receipt in the pocket is timed 23:00.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "physical",
+      "RelatedCharacters": [],
+      "RelatedEvents": [
+        "TL_2300"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "minor",
+      "Optional": true,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {
+        "Curiosity": 1
+      }
+    },
+    {
+      "ClueID": "CLUE_UMBRELLA",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_06",
+      "Title": "Umbrella",
+      "Description": "A student umbrella, still open enough to drip. The water points back toward the elevator, not toward the office.",
+      "Location": "LOC_CORRIDOR",
+      "DiscoveryMethod": "physical",
+      "RelatedCharacters": [
+        "CH_MAYA"
+      ],
+      "RelatedEvents": [],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_STATEMENT",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_07",
+      "Title": "Witness statement",
+      "Description": "The pages are a witness statement about Northline's night routes. Maya says they have to be signed before midnight or the text disappears. She did not write them.",
+      "Location": "LOC_LOBBY",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_MAYA",
+        "CH_ADRIAN"
+      ],
+      "RelatedEvents": [
+        "TL_2315"
+      ],
+      "RelatedClues": [
+        "CLUE_CONTRACT",
+        "CLUE_VOICEMAIL"
+      ],
+      "MemoryReference": "MEM_LOBBY",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_SILHOUETTE",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_07",
+      "Title": "The warning in the lobby",
+      "Description": "Maya says a silhouette told her she did not have much time, and that she should not trust the quiet. She did not see a face. She still needed a signature.",
+      "Location": "LOC_LOBBY",
+      "DiscoveryMethod": "dialogue",
+      "RelatedCharacters": [
+        "CH_MAYA",
+        "CH_STRANGER"
+      ],
+      "RelatedEvents": [],
+      "RelatedClues": [
+        "CLUE_BREATH"
+      ],
+      "MemoryReference": "MEM_LOBBY",
+      "Importance": "major",
+      "Optional": true,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_HOURGLASS",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_10",
+      "Title": "The hourglass",
+      "Description": "An hourglass on the boardroom table, sand almost gone. No meeting is using it. It is simply running out.",
+      "Location": "LOC_BOARDROOM",
+      "DiscoveryMethod": "physical",
+      "RelatedCharacters": [],
+      "RelatedEvents": [],
+      "RelatedClues": [
+        "CLUE_COIN"
+      ],
+      "MemoryReference": "",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": true,
+      "CrossTarget": "ALL",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_NEWSPAPER",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_10",
+      "Title": "Evening paper",
+      "Description": "The evening paper, folded to a column by Daniel Cross. The piece is about a man who missed the last train. One name in the second paragraph is a black bar.",
+      "Location": "LOC_BOARDROOM",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_DANIEL"
+      ],
+      "RelatedEvents": [],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "minor",
+      "Optional": true,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": true,
+      "CrossTarget": "CH03",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {
+        "Curiosity": 1
+      }
+    },
+    {
+      "ClueID": "CLUE_PAINTING",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_10",
+      "Title": "Unfinished canvas",
+      "Description": "A canvas leans on the boardroom wall. Rain, a tower, a small coin in the corner that the paint has not finished. On the back, a name: Clara. The date is scratched out.",
+      "Location": "LOC_BOARDROOM",
+      "DiscoveryMethod": "visual",
+      "RelatedCharacters": [
+        "CH_CLARA"
+      ],
+      "RelatedEvents": [],
+      "RelatedClues": [
+        "CLUE_COIN"
+      ],
+      "MemoryReference": "",
+      "Importance": "minor",
+      "Optional": true,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": true,
+      "CrossTarget": "CH10",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {
+        "Curiosity": 1
+      }
+    },
+    {
+      "ClueID": "CLUE_DOOR_TOUCH",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_11",
+      "Title": "Cold bar",
+      "Description": "The roof-door bar is cold. Rain presses the seam from the other side. Nothing on the door says what the landing is for.",
+      "Location": "LOC_STAIR",
+      "DiscoveryMethod": "physical",
+      "RelatedCharacters": [],
+      "RelatedEvents": [
+        "TL_2341"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_SHOE",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_11",
+      "Title": "One shoe",
+      "Description": "One black shoe on the wet landing. The railing bolt beside it is sheared. The rain has been coming in longer than the shoe has been here.",
+      "Location": "LOC_STAIR",
+      "DiscoveryMethod": "physical",
+      "RelatedCharacters": [],
+      "RelatedEvents": [
+        "TL_2341"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Open"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_UNOPENED",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_11",
+      "Title": "Untouched bar",
+      "Description": "The bar is still latched. A dry oval on the metal shows where a hand almost settled and then did not.",
+      "Location": "LOC_STAIR",
+      "DiscoveryMethod": "visual",
+      "RelatedCharacters": [],
+      "RelatedEvents": [
+        "TL_2341"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Shut"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_FINAL_HS",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_12",
+      "Title": "Delayed stamp",
+      "Description": "The contract is stamped DELAYED. A student card lies in the ink, Maya's, still warm. The memo under it has a blank where a name should be printed in the morning.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_MAYA",
+        "CH_ADRIAN"
+      ],
+      "RelatedEvents": [
+        "TL_2355"
+      ],
+      "RelatedClues": [
+        "CLUE_CONTRACT",
+        "CLUE_STATEMENT"
+      ],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "MayaOutcome",
+          "Equals": "Helped"
+        },
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Shut"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues",
+        "Objects"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_FINAL_HO",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_12",
+      "Title": "Delayed, and the door",
+      "Description": "The contract is stamped DELAYED. A wet print crosses the memo from the direction of the roof door. The student card is in the ink. The landing was still visited.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_MAYA"
+      ],
+      "RelatedEvents": [
+        "TL_2355"
+      ],
+      "RelatedClues": [
+        "CLUE_SHOE",
+        "CLUE_CONTRACT"
+      ],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "MayaOutcome",
+          "Equals": "Helped"
+        },
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Open"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_FINAL_IS",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_12",
+      "Title": "Executed stamp",
+      "Description": "The contract is stamped EXECUTED, 23:16. The phone shows a message that ends mid-word. The rest of the line is blank paper. The roof door is shut.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [],
+      "RelatedEvents": [
+        "TL_2355"
+      ],
+      "RelatedClues": [
+        "CLUE_VOICEMAIL",
+        "CLUE_CONTRACT"
+      ],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "MayaOutcome",
+          "Equals": "Ignored"
+        },
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Shut"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CLUE_FINAL_IO",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_12",
+      "Title": "Executed, and the landing",
+      "Description": "The contract is stamped EXECUTED, 23:16. The second glass on the desk was never filled. The roof door was opened. The phone's last sentence stops in a blank.",
+      "Location": "LOC_OFFICE",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [],
+      "RelatedEvents": [
+        "TL_2355"
+      ],
+      "RelatedClues": [
+        "CLUE_SHOE",
+        "CLUE_CONTRACT"
+      ],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "MayaOutcome",
+          "Equals": "Ignored"
+        },
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Open"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    }
+  ],
+  "Dialogue": [
+    {
+      "DialogueID": "DLG_PHONE",
+      "Speaker": "CH_MAYA",
+      "Text": "A voicemail, 23:12. A young woman's voice, careful, out of breath. \"Mr. Vale, it's Maya. I'm in the lobby. If the papers aren't signed by midnight they said the page goes blank. Please.\"",
+      "Choices": [
+        {
+          "ChoiceID": "CHOICE_REPLAY",
+          "Text": "Play the last three seconds again.",
+          "BranchGroup": "",
+          "ConsequenceID": "CONS_REPLAY",
+          "NextNode": "DLG_RESP_REPLAY",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_SAVE_MSG",
+          "Text": "Save the message and put the phone down.",
+          "BranchGroup": "",
+          "ConsequenceID": "CONS_SAVE_MSG",
+          "NextNode": "DLG_RESP_SAVE",
+          "Requirements": []
+        }
+      ],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [
+        "CLUE_VOICEMAIL"
+      ],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Close",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_RESP_REPLAY",
+      "Speaker": "CH_MAYA",
+      "Text": "The last three seconds are mostly rain. Under it, a second voice, almost kind, tells her she does not have much time.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Close",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_RESP_SAVE",
+      "Speaker": "CH_ADRIAN",
+      "Text": "He saves it. The phone goes dark. The lobby does not.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Close",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_MAYA",
+      "Speaker": "CH_MAYA",
+      "Text": "Mr. Vale? I need you to sign this before midnight. They said the papers vanish at twelve. I came straight up. I wasn't sure you'd still be here.",
+      "Choices": [
+        {
+          "ChoiceID": "CHOICE_HELP_MAYA",
+          "Text": "Show me where to sign.",
+          "BranchGroup": "BRANCH_MAYA",
+          "ConsequenceID": "CONS_HELP",
+          "NextNode": "DLG_RESP_HELP",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_IGNORE_MAYA",
+          "Text": "The deal is tonight. Take them back down.",
+          "BranchGroup": "BRANCH_MAYA",
+          "ConsequenceID": "CONS_IGNORE",
+          "NextNode": "DLG_RESP_IGNORE",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_ASK_MAYA",
+          "Text": "Who told you that you don't have much time?",
+          "BranchGroup": "",
+          "ConsequenceID": "CONS_ASK",
+          "NextNode": "DLG_MAYA_DECIDE",
+          "Requirements": []
+        }
+      ],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Conversation",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_MAYA_DECIDE",
+      "Speaker": "CH_MAYA",
+      "Text": "I didn't see a face. He stood where the light stops. He said I didn't have much time, and that I shouldn't trust the quiet. Will you sign them?",
+      "Choices": [
+        {
+          "ChoiceID": "CHOICE_HELP_MAYA_B",
+          "Text": "Show me where to sign.",
+          "BranchGroup": "BRANCH_MAYA",
+          "ConsequenceID": "CONS_HELP",
+          "NextNode": "DLG_RESP_HELP",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_IGNORE_MAYA_B",
+          "Text": "The deal is tonight. Take them back down.",
+          "BranchGroup": "BRANCH_MAYA",
+          "ConsequenceID": "CONS_IGNORE",
+          "NextNode": "DLG_RESP_IGNORE",
+          "Requirements": []
+        }
+      ],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Conversation",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_RESP_HELP",
+      "Speaker": "CH_MAYA",
+      "Text": "Then here. Before the ink decides to leave. I'll wait while you read. I can wait.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Conversation",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_RESP_IGNORE",
+      "Speaker": "CH_MAYA",
+      "Text": "Then I'll take them back down. I hope the lobby still has a door.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Conversation",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_STRANGER",
+      "Speaker": "CH_STRANGER",
+      "Text": "You don't have much time.",
+      "Choices": [
+        {
+          "ChoiceID": "CHOICE_ACCUSE",
+          "Text": "Are you threatening me?",
+          "BranchGroup": "",
+          "ConsequenceID": "CONS_ACCUSE",
+          "NextNode": "DLG_RESP_ACCUSE",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_ASK_DEATH",
+          "Text": "Then tell me how I died.",
+          "BranchGroup": "",
+          "ConsequenceID": "CONS_ASK_DEATH",
+          "NextNode": "DLG_RESP_HOW",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_WHICH_DOOR",
+          "Text": "What door?",
+          "BranchGroup": "",
+          "ConsequenceID": "CONS_WHICH_DOOR",
+          "NextNode": "DLG_RESP_DOOR",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_ASK_COIN",
+          "Text": "What is this coin?",
+          "BranchGroup": "",
+          "ConsequenceID": "CONS_ASK_COIN",
+          "NextNode": "DLG_RESP_COIN",
+          "Requirements": [
+            {
+              "Flag": "HasCoin",
+              "Equals": "Found"
+            }
+          ]
+        }
+      ],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Conversation",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_RESP_ACCUSE",
+      "Speaker": "CH_STRANGER",
+      "Text": "If a warning frightens you, keep it.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Conversation",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_RESP_HOW",
+      "Speaker": "CH_STRANGER",
+      "Text": "That is the wrong question. You already walked past the answer.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Close",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_RESP_DOOR",
+      "Speaker": "CH_STRANGER",
+      "Text": "You shouldn't open that door. You will know it by how badly you want it open.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Conversation",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_RESP_COIN",
+      "Speaker": "CH_STRANGER",
+      "Text": "You found it. Don't ask me what it wants.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Close",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_DOOR",
+      "Speaker": "CH_ADRIAN",
+      "Text": "The roof door. The bar is cold. Rain pushes at the seam.",
+      "Choices": [
+        {
+          "ChoiceID": "CHOICE_OPEN_DOOR",
+          "Text": "Open it.",
+          "BranchGroup": "BRANCH_DOOR",
+          "ConsequenceID": "CONS_OPEN_DOOR",
+          "NextNode": "DLG_RESP_OPEN",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_LEAVE_DOOR",
+          "Text": "Step back.",
+          "BranchGroup": "BRANCH_DOOR",
+          "ConsequenceID": "CONS_LEAVE_DOOR",
+          "NextNode": "DLG_RESP_SHUT",
+          "Requirements": []
+        }
+      ],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [
+        "CLUE_DOOR_TOUCH"
+      ],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Low",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_RESP_OPEN",
+      "Speaker": "CH_ADRIAN",
+      "Text": "The latch gives. Rain comes in and does not explain itself.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Low",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_RESP_SHUT",
+      "Speaker": "CH_ADRIAN",
+      "Text": "He takes his hand off the bar. The dry mark of it stays.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "Low",
+      "Reveal": false
+    }
+  ],
+  "Consequences": [
+    {
+      "Id": "CONS_REPLAY",
+      "SetFlags": {
+        "HeardVoicemail": "Replayed"
+      },
+      "Soul": {
+        "Curiosity": 1
+      },
+      "RevealClues": [
+        "CLUE_BREATH"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": true,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_SAVE_MSG",
+      "SetFlags": {
+        "HeardVoicemail": "Saved"
+      },
+      "Soul": {
+        "Honesty": 1
+      },
+      "RevealClues": [],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_HELP",
+      "SetFlags": {
+        "MayaOutcome": "Helped"
+      },
+      "Soul": {
+        "Empathy": 2,
+        "Sacrifice": 1,
+        "Compassion": 1
+      },
+      "RevealClues": [],
+      "UnlockTimeline": [],
+      "Relationship": {
+        "CH_MAYA": 2
+      },
+      "HelpedNpc": true,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_IGNORE",
+      "SetFlags": {
+        "MayaOutcome": "Ignored"
+      },
+      "Soul": {
+        "Empathy": -2
+      },
+      "RevealClues": [],
+      "UnlockTimeline": [],
+      "Relationship": {
+        "CH_MAYA": -2
+      },
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_ASK",
+      "SetFlags": {},
+      "Soul": {
+        "Curiosity": 1
+      },
+      "RevealClues": [
+        "CLUE_SILHOUETTE"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": true,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_ACCUSE",
+      "SetFlags": {
+        "StrangerTone": "Accused"
+      },
+      "Soul": {
+        "Courage": 1
+      },
+      "RevealClues": [],
+      "UnlockTimeline": [],
+      "Relationship": {
+        "CH_STRANGER": -1
+      },
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_ASK_DEATH",
+      "SetFlags": {
+        "StrangerTone": "Asked"
+      },
+      "Soul": {
+        "Curiosity": 1,
+        "Honesty": 1
+      },
+      "RevealClues": [],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_WHICH_DOOR",
+      "SetFlags": {
+        "StrangerTone": "Warned"
+      },
+      "Soul": {
+        "Understanding": 1
+      },
+      "RevealClues": [],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_ASK_COIN",
+      "SetFlags": {
+        "StrangerTone": "AskedCoin"
+      },
+      "Soul": {
+        "Curiosity": 1,
+        "Understanding": 1
+      },
+      "RevealClues": [],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_OPEN_DOOR",
+      "SetFlags": {
+        "DoorOutcome": "Open"
+      },
+      "Soul": {
+        "Courage": 1
+      },
+      "RevealClues": [
+        "CLUE_SHOE"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_LEAVE_DOOR",
+      "SetFlags": {
+        "DoorOutcome": "Shut"
+      },
+      "Soul": {
+        "Understanding": 1
+      },
+      "RevealClues": [
+        "CLUE_UNOPENED"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    }
+  ],
+  "Memories": [
+    {
+      "MemoryID": "MEM_LOBBY",
+      "ChapterID": "CH01",
+      "CardID": "CH01_CARD_07",
+      "QuestionAnswered": "At 23:15 Maya was in the lobby with a witness statement about Northline, and she needed a signature before midnight.",
+      "QuestionOpened": "A silhouette told her she did not have much time. The statement does not say what happens if the door upstairs is opened.",
+      "RequiredClue": "CLUE_STATEMENT",
+      "TimelineEventID": "TL_2315",
+      "EntryLocationId": "LOC_LOBBY",
+      "EntryPosition": {
+        "X": 420,
+        "Y": 3900,
+        "Z": 110
+      },
+      "HoldLine": "The memory is still holding something.",
+      "Playable": true
+    }
+  ],
+  "Timeline": [
+    {
+      "EventID": "TL_2300",
+      "ChapterID": "CH01",
+      "Time": "23:00",
+      "Title": "The lobby receipt",
+      "LocationId": "LOC_OFFICE",
+      "Position": {
+        "X": 1100,
+        "Y": 420,
+        "Z": 110
+      },
+      "StartsLocked": true,
+      "Branches": [],
+      "UnlockOnClue": "CLUE_COAT"
+    },
+    {
+      "EventID": "TL_2312",
+      "ChapterID": "CH01",
+      "Time": "23:12",
+      "Title": "Maya's voicemail",
+      "LocationId": "LOC_OFFICE",
+      "Position": {
+        "X": 900,
+        "Y": 700,
+        "Z": 110
+      },
+      "StartsLocked": true,
+      "Branches": [],
+      "UnlockOnClue": "CLUE_VOICEMAIL"
+    },
+    {
+      "EventID": "TL_2315",
+      "ChapterID": "CH01",
+      "Time": "23:15",
+      "Title": "The lobby",
+      "LocationId": "LOC_LOBBY",
+      "Position": {
+        "X": 420,
+        "Y": 3900,
+        "Z": 110
+      },
+      "StartsLocked": true,
+      "Branches": [
+        {
+          "ChoiceID": "CHOICE_HELP_MAYA",
+          "Label": "HELP MAYA"
+        },
+        {
+          "ChoiceID": "CHOICE_IGNORE_MAYA",
+          "Label": "IGNORE MAYA"
+        }
+      ],
+      "UnlockOnClue": "CLUE_STATEMENT"
+    },
+    {
+      "EventID": "TL_2330",
+      "ChapterID": "CH01",
+      "Time": "23:30",
+      "Title": "The coin",
+      "LocationId": "LOC_OFFICE",
+      "Position": {
+        "X": 700,
+        "Y": 740,
+        "Z": 110
+      },
+      "StartsLocked": true,
+      "Branches": [],
+      "UnlockOnClue": "CLUE_COIN"
+    },
+    {
+      "EventID": "TL_2341",
+      "ChapterID": "CH01",
+      "Time": "23:41",
+      "Title": "The roof door",
+      "LocationId": "LOC_STAIR",
+      "Position": {
+        "X": 4000,
+        "Y": 700,
+        "Z": 110
+      },
+      "StartsLocked": true,
+      "Branches": [
+        {
+          "ChoiceID": "CHOICE_OPEN_DOOR",
+          "Label": "OPEN THE DOOR"
+        },
+        {
+          "ChoiceID": "CHOICE_LEAVE_DOOR",
+          "Label": "LEAVE IT SHUT"
+        }
+      ],
+      "UnlockOnClue": "CLUE_DOOR_TOUCH"
+    },
+    {
+      "EventID": "TL_2347",
+      "ChapterID": "CH01",
+      "Time": "23:47",
+      "Title": "The awakening",
+      "LocationId": "LOC_OFFICE",
+      "Position": {
+        "X": 380,
+        "Y": 700,
+        "Z": 110
+      },
+      "StartsLocked": false,
+      "Branches": [],
+      "UnlockOnClue": ""
+    },
+    {
+      "EventID": "TL_2355",
+      "ChapterID": "CH01",
+      "Time": "23:55",
+      "Title": "The hour",
+      "LocationId": "LOC_OFFICE",
+      "Position": {
+        "X": 740,
+        "Y": 780,
+        "Z": 110
+      },
+      "StartsLocked": true,
+      "Branches": [],
+      "UnlockOnClue": ""
+    }
+  ],
+  "Interactables": [
+    {
+      "Id": "INT_CLOCK",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "Inspectable",
+      "Prompt": "E — INSPECT",
+      "Title": "Clock",
+      "InspectText": "23:47. The second hand has stopped mid-accusation.",
+      "ClueID": "CLUE_CLOCK",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 520,
+        "Y": 1180,
+        "Z": 150
+      },
+      "Scale": {
+        "X": 0.16,
+        "Y": 0.16,
+        "Z": 0.28
+      },
+      "Mesh": "Cylinder",
+      "Color": "2A3038",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_01",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_PHOTO",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "VoidTrace",
+      "Prompt": "E — INSPECT",
+      "Title": "Photograph",
+      "InspectText": "The face is gone. The suit is still standing in the rain.",
+      "ClueID": "CLUE_PHOTO",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 280,
+        "Y": 1320,
+        "Z": 190
+      },
+      "Scale": {
+        "X": 0.55,
+        "Y": 0.04,
+        "Z": 0.4
+      },
+      "Mesh": "Cube",
+      "Color": "6A645C",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_02",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "Photo",
+      "Action": ""
+    },
+    {
+      "Id": "INT_NAMEPLATE",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "Inspectable",
+      "Prompt": "E — INSPECT",
+      "Title": "Nameplate",
+      "InspectText": "ADRIAN VALE. CHIEF EXECUTIVE. The line under it has been scraped clean.",
+      "ClueID": "CLUE_NAMEPLATE",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 700,
+        "Y": 860,
+        "Z": 88
+      },
+      "Scale": {
+        "X": 0.46,
+        "Y": 0.12,
+        "Z": 0.06
+      },
+      "Mesh": "Cube",
+      "Color": "8A8478",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_02",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_WINDOW",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "Inspectable",
+      "Prompt": "E — INSPECT",
+      "Title": "Window",
+      "InspectText": "Rain on the glass. The city keeps a little colour and no explanations.",
+      "ClueID": "CLUE_RAIN",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 800,
+        "Y": 80,
+        "Z": 180
+      },
+      "Scale": {
+        "X": 1.4,
+        "Y": 0.04,
+        "Z": 0.9
+      },
+      "Mesh": "Cube",
+      "Color": "142028",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_02",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_CONTRACT",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Contract",
+      "InspectText": "Northline Transit. The signature line is open. Midnight is written in the margin like a dare.",
+      "ClueID": "CLUE_CONTRACT",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 820,
+        "Y": 760,
+        "Z": 88
+      },
+      "Scale": {
+        "X": 0.38,
+        "Y": 0.26,
+        "Z": 0.03
+      },
+      "Mesh": "Cube",
+      "Color": "D9D3C7",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_03",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_WAIVER",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Waiver",
+      "InspectText": "Elena Moretti's waiver. Strain after dusk. A second name, removed.",
+      "ClueID": "CLUE_WAIVER",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 900,
+        "Y": 820,
+        "Z": 86
+      },
+      "Scale": {
+        "X": 0.22,
+        "Y": 0.16,
+        "Z": 0.02
+      },
+      "Mesh": "Cube",
+      "Color": "E6E0D4",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_03",
+      "Hidden": true,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_TORN_CARD",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "VoidTrace",
+      "Prompt": "E — INSPECT",
+      "Title": "Torn card",
+      "InspectText": "CARD 0 — and then a tear where the title should be.",
+      "ClueID": "CLUE_TORN_CARD",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 620,
+        "Y": 690,
+        "Z": 84
+      },
+      "Scale": {
+        "X": 0.18,
+        "Y": 0.12,
+        "Z": 0.02
+      },
+      "Mesh": "Cube",
+      "Color": "1B1A18",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_03",
+      "Hidden": true,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "TornCard",
+      "Action": ""
+    },
+    {
+      "Id": "INT_MISSING_NAME",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "VoidTrace",
+      "Prompt": "E — INSPECT",
+      "Title": "Plaque",
+      "InspectText": "The letters were lifted out. The name did not grow back.",
+      "ClueID": "CLUE_MISSING_NAME",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 180,
+        "Y": 240,
+        "Z": 160
+      },
+      "Scale": {
+        "X": 0.34,
+        "Y": 0.06,
+        "Z": 0.16
+      },
+      "Mesh": "Cube",
+      "Color": "3A3E44",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_03",
+      "Hidden": true,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "MissingName",
+      "Action": ""
+    },
+    {
+      "Id": "INT_COIN",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "StoryObject",
+      "Prompt": "E — TAKE",
+      "Title": "Coin",
+      "InspectText": "Blank on one face. An hourglass worn into the other. He is the one who finds it.",
+      "ClueID": "CLUE_COIN",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 680,
+        "Y": 730,
+        "Z": 90
+      },
+      "Scale": {
+        "X": 0.1,
+        "Y": 0.1,
+        "Z": 0.025
+      },
+      "Mesh": "Cylinder",
+      "Color": "C4A574",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_04",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_PHONE",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "DialogueTrigger",
+      "Prompt": "E — LISTEN",
+      "Title": "Phone",
+      "InspectText": "One message. 23:12.",
+      "ClueID": "",
+      "DialogueID": "DLG_PHONE",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 960,
+        "Y": 700,
+        "Z": 88
+      },
+      "Scale": {
+        "X": 0.16,
+        "Y": 0.08,
+        "Z": 0.04
+      },
+      "Mesh": "Cube",
+      "Color": "22262C",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_05",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_COAT",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Coat",
+      "InspectText": "Wet at the shoulders. A lobby receipt timed 23:00.",
+      "ClueID": "CLUE_COAT",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 1180,
+        "Y": 420,
+        "Z": 70
+      },
+      "Scale": {
+        "X": 0.35,
+        "Y": 0.28,
+        "Z": 0.7
+      },
+      "Mesh": "Cube",
+      "Color": "1A1C20",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_02",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_UMBRELLA",
+      "LocationId": "LOC_CORRIDOR",
+      "Kind": "MemoryTrigger",
+      "Prompt": "E — REMEMBER",
+      "Title": "Umbrella",
+      "InspectText": "Maya's umbrella, still dripping toward the elevator.",
+      "ClueID": "CLUE_UMBRELLA",
+      "DialogueID": "",
+      "MemoryID": "MEM_LOBBY",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 2100,
+        "Y": 700,
+        "Z": 40
+      },
+      "Scale": {
+        "X": 0.12,
+        "Y": 0.12,
+        "Z": 0.7
+      },
+      "Mesh": "Cylinder",
+      "Color": "1A3A3A",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_06",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_STRANGER",
+      "LocationId": "LOC_CORRIDOR",
+      "Kind": "GrimReaper",
+      "Prompt": "E — SPEAK",
+      "Title": "Stranger",
+      "InspectText": "A silhouette. No face to inspect.",
+      "ClueID": "",
+      "DialogueID": "DLG_STRANGER",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 3400,
+        "Y": 700,
+        "Z": 120
+      },
+      "Scale": {
+        "X": 0.45,
+        "Y": 0.28,
+        "Z": 1.85
+      },
+      "Mesh": "Cube",
+      "Color": "050506",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_09",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_HOURGLASS",
+      "LocationId": "LOC_BOARDROOM",
+      "Kind": "Inspectable",
+      "Prompt": "E — INSPECT",
+      "Title": "Hourglass",
+      "InspectText": "Sand, almost finished. Nobody called a meeting.",
+      "ClueID": "CLUE_HOURGLASS",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 2700,
+        "Y": 1280,
+        "Z": 96
+      },
+      "Scale": {
+        "X": 0.12,
+        "Y": 0.12,
+        "Z": 0.28
+      },
+      "Mesh": "Cylinder",
+      "Color": "8A8378",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_10",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_NEWSPAPER",
+      "LocationId": "LOC_BOARDROOM",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Newspaper",
+      "InspectText": "Daniel Cross. A man who missed the last train. A name barred out in black.",
+      "ClueID": "CLUE_NEWSPAPER",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 2860,
+        "Y": 1240,
+        "Z": 90
+      },
+      "Scale": {
+        "X": 0.32,
+        "Y": 0.22,
+        "Z": 0.03
+      },
+      "Mesh": "Cube",
+      "Color": "C8C2B6",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_10",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_PAINTING",
+      "LocationId": "LOC_BOARDROOM",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Canvas",
+      "InspectText": "Rain, the tower, a coin not finished. Clara, on the back. The date is gone.",
+      "ClueID": "CLUE_PAINTING",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 2500,
+        "Y": 1680,
+        "Z": 190
+      },
+      "Scale": {
+        "X": 0.7,
+        "Y": 0.05,
+        "Z": 0.9
+      },
+      "Mesh": "Cube",
+      "Color": "2C3338",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_10",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_DOOR",
+      "LocationId": "LOC_STAIR",
+      "Kind": "DialogueTrigger",
+      "Prompt": "E — OPEN",
+      "Title": "Roof door",
+      "InspectText": "Cold metal. Rain on the far side.",
+      "ClueID": "",
+      "DialogueID": "DLG_DOOR",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 4120,
+        "Y": 700,
+        "Z": 130
+      },
+      "Scale": {
+        "X": 0.16,
+        "Y": 1.1,
+        "Z": 2.1
+      },
+      "Mesh": "Cube",
+      "Color": "121418",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_11",
+      "Hidden": false,
+      "BlocksPlayer": true,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_SHOE",
+      "LocationId": "LOC_STAIR",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Shoe",
+      "InspectText": "One shoe. A sheared bolt. Rain older than the shoe.",
+      "ClueID": "CLUE_SHOE",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 4380,
+        "Y": 760,
+        "Z": 20
+      },
+      "Scale": {
+        "X": 0.22,
+        "Y": 0.1,
+        "Z": 0.08
+      },
+      "Mesh": "Cube",
+      "Color": "0C0C0E",
+      "PresentIf": [
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Open"
+        }
+      ],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_11",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_UNOPENED",
+      "LocationId": "LOC_STAIR",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Latch",
+      "InspectText": "Still latched. The dry oval of a hand that changed its mind.",
+      "ClueID": "CLUE_UNOPENED",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 4080,
+        "Y": 700,
+        "Z": 120
+      },
+      "Scale": {
+        "X": 0.2,
+        "Y": 0.08,
+        "Z": 0.08
+      },
+      "Mesh": "Cube",
+      "Color": "5A5348",
+      "PresentIf": [
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Shut"
+        }
+      ],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_11",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_MAYA",
+      "LocationId": "LOC_LOBBY",
+      "Kind": "CharacterInteraction",
+      "Prompt": "E — SPEAK",
+      "Title": "Maya",
+      "InspectText": "A student with a wet coat and a folder she will not put down.",
+      "ClueID": "",
+      "DialogueID": "DLG_MAYA",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 980,
+        "Y": 4000,
+        "Z": 110
+      },
+      "Scale": {
+        "X": 0.42,
+        "Y": 0.28,
+        "Z": 1.65
+      },
+      "Mesh": "Cylinder",
+      "Color": "243038",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": true,
+      "FlashbackMemoryID": "MEM_LOBBY",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_STATEMENT",
+      "LocationId": "LOC_LOBBY",
+      "Kind": "Clue",
+      "Prompt": "E — READ",
+      "Title": "Statement",
+      "InspectText": "Northline's night routes. A signature line. Midnight.",
+      "ClueID": "CLUE_STATEMENT",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 1080,
+        "Y": 3960,
+        "Z": 90
+      },
+      "Scale": {
+        "X": 0.28,
+        "Y": 0.2,
+        "Z": 0.03
+      },
+      "Mesh": "Cube",
+      "Color": "E4DCCE",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": true,
+      "FlashbackMemoryID": "MEM_LOBBY",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_RETURN",
+      "LocationId": "LOC_LOBBY",
+      "Kind": "StoryObject",
+      "Prompt": "F — RETURN",
+      "Title": "Return",
+      "InspectText": "The memory can be left once it has given up the page.",
+      "ClueID": "",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 420,
+        "Y": 3500,
+        "Z": 110
+      },
+      "Scale": {
+        "X": 0.4,
+        "Y": 0.4,
+        "Z": 1.2
+      },
+      "Mesh": "Cube",
+      "Color": "10141A",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": true,
+      "FlashbackMemoryID": "MEM_LOBBY",
+      "TraceStyle": "",
+      "Action": "ReturnMemory"
+    },
+    {
+      "Id": "INT_FINAL_HS",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Desk, delayed",
+      "InspectText": "DELAYED. A student card in the ink. A blank where the morning memo wants a name.",
+      "ClueID": "CLUE_FINAL_HS",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 760,
+        "Y": 800,
+        "Z": 92
+      },
+      "Scale": {
+        "X": 0.42,
+        "Y": 0.28,
+        "Z": 0.04
+      },
+      "Mesh": "Cube",
+      "Color": "C4B8A4",
+      "PresentIf": [
+        {
+          "Flag": "MayaOutcome",
+          "Equals": "Helped"
+        },
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Shut"
+        }
+      ],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_12",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_FINAL_HO",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Desk, delayed",
+      "InspectText": "DELAYED. A wet print from the roof door crosses the memo.",
+      "ClueID": "CLUE_FINAL_HO",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 760,
+        "Y": 800,
+        "Z": 92
+      },
+      "Scale": {
+        "X": 0.42,
+        "Y": 0.28,
+        "Z": 0.04
+      },
+      "Mesh": "Cube",
+      "Color": "C4B8A4",
+      "PresentIf": [
+        {
+          "Flag": "MayaOutcome",
+          "Equals": "Helped"
+        },
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Open"
+        }
+      ],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_12",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_FINAL_IS",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Desk, executed",
+      "InspectText": "EXECUTED, 23:16. The phone's last sentence ends in blank paper.",
+      "ClueID": "CLUE_FINAL_IS",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 760,
+        "Y": 800,
+        "Z": 92
+      },
+      "Scale": {
+        "X": 0.42,
+        "Y": 0.28,
+        "Z": 0.04
+      },
+      "Mesh": "Cube",
+      "Color": "C4B8A4",
+      "PresentIf": [
+        {
+          "Flag": "MayaOutcome",
+          "Equals": "Ignored"
+        },
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Shut"
+        }
+      ],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_12",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    },
+    {
+      "Id": "INT_FINAL_IO",
+      "LocationId": "LOC_OFFICE",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Desk, executed",
+      "InspectText": "EXECUTED, 23:16. The second glass was never filled. The door was.",
+      "ClueID": "CLUE_FINAL_IO",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 760,
+        "Y": 800,
+        "Z": 92
+      },
+      "Scale": {
+        "X": 0.42,
+        "Y": 0.28,
+        "Z": 0.04
+      },
+      "Mesh": "Cube",
+      "Color": "C4B8A4",
+      "PresentIf": [
+        {
+          "Flag": "MayaOutcome",
+          "Equals": "Ignored"
+        },
+        {
+          "Flag": "DoorOutcome",
+          "Equals": "Open"
+        }
+      ],
+      "AbsentIf": [],
+      "RequiredCard": "CH01_CARD_12",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    }
+  ],
+  "MusicIdentity": "piano_low",
+  "MusicLayers": [
+    "rain",
+    "city",
+    "clocks",
+    "piano"
+  ]
+}

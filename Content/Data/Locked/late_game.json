@@ -1,0 +1,57 @@
+{
+  "Playable": false,
+  "ImplementSteps": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "GrimReaperIdentity": "The Grim Reaper",
+  "GrimReaperIsVillain": false,
+  "GrimReaperLines": [
+    "You thought you were solving their deaths.",
+    "You were learning who they were.",
+    "And I was learning who you are.",
+    "I don't decide who deserves another life.",
+    "You showed me.",
+    "There is one soul left."
+  ],
+  "VoidName": "The Void",
+  "VoidPolicy": "Unnamed until late game. Early traces only: missing names, corrupted photographs, broken cards, blank dialogue.",
+  "Endings": [
+    {
+      "Id": "THE_RETURN",
+      "Title": "THE RETURN",
+      "Meaning": "The soul returns."
+    },
+    {
+      "Id": "THE_RELEASE",
+      "Title": "THE RELEASE",
+      "Meaning": "The soul accepts its journey."
+    },
+    {
+      "Id": "THE_LOST",
+      "Title": "THE LOST",
+      "Meaning": "The soul disappears into The Void."
+    },
+    {
+      "Id": "THE_SACRIFICE",
+      "Title": "THE SACRIFICE",
+      "Meaning": "One soul helps another."
+    },
+    {
+      "Id": "THE_AWAKENING",
+      "Title": "THE AWAKENING",
+      "Meaning": "The soul understands the cycle."
+    }
+  ],
+  "Soul11Title": "SOUL 11",
+  "Soul11Then": "YOU",
+  "Soul11Chairs": 11,
+  "Soul11CoinPlacedBy": "The Grim Reaper",
+  "FinalMessage": [
+    "You cannot change what happened.",
+    "But you can change what it means."
+  ],
+  "AwakeningLine": "Now we begin."
+}

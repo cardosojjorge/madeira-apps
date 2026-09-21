@@ -1,0 +1,766 @@
+{
+  "ChapterID": "CH09",
+  "Title": "Control",
+  "Logline": "A scientist measures a coin that will not sit inside his dates.",
+  "Playable": false,
+  "ProtagonistId": "CH_ELIAS",
+  "Theme": "Control",
+  "ColourSaturation": 0.44,
+  "Clock": "23:47",
+  "CoinBeat": "Elias investigates the coin.",
+  "HourglassBeat": "Elias draws the hourglass as a function and the labels fall off the axes.",
+  "StrangerStage": "IdentityNearlyConfirmed",
+  "CrossChapterRefs": [
+    {
+      "Id": "CH09_COIN",
+      "TargetChapter": "ALL",
+      "Kind": "coin",
+      "Note": "Elias investigates the coin. The alloy predates his chart."
+    },
+    {
+      "Id": "CH09_GLASS",
+      "TargetChapter": "ALL",
+      "Kind": "hourglass",
+      "Note": "He draws the hourglass and the axis labels fall off."
+    },
+    {
+      "Id": "CH09_DANIEL",
+      "TargetChapter": "CH03",
+      "Kind": "symbol",
+      "Note": "Daniel's case number is on the sample bag."
+    },
+    {
+      "Id": "CH09_MARCO",
+      "TargetChapter": "CH06",
+      "Kind": "figure",
+      "Note": "Marco's book lists a guest who does not eat."
+    }
+  ],
+  "Locations": [
+    {
+      "LocationId": "LOC_CH09",
+      "Name": "Elias Hart — recorded room",
+      "Description": "A scientist measures a coin that will not sit inside his dates.",
+      "Origin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "SizeX": 1200,
+      "SizeY": 900,
+      "Height": 400,
+      "Corridor": false,
+      "OpenEast": false,
+      "OpenWest": false,
+      "OpenNorth": false,
+      "OpenSouth": false,
+      "Spawn": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "SpawnYaw": 0,
+      "Props": [],
+      "Lights": [
+        {
+          "Position": {
+            "X": 400,
+            "Y": 400,
+            "Z": 250
+          },
+          "Color": "7F97A8",
+          "Intensity": 800,
+          "Radius": 600
+        }
+      ]
+    }
+  ],
+  "Cards": [
+    {
+      "CardID": "CH09_CARD_01",
+      "ChapterID": "CH09",
+      "Title": "The Hour",
+      "Scene": "The Hour",
+      "Location": "LOC_CH09",
+      "Time": "23:11",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_02"
+      ],
+      "Body": "A scientist measures a coin that will not sit inside his dates.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_02",
+      "ChapterID": "CH09",
+      "Title": "The Room",
+      "Scene": "The Room",
+      "Location": "LOC_CH09",
+      "Time": "23:12",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_03"
+      ],
+      "Body": "A scientist measures a coin that will not sit inside his dates.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_03",
+      "ChapterID": "CH09",
+      "Title": "The Paper",
+      "Scene": "The Paper",
+      "Location": "LOC_CH09",
+      "Time": "23:13",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_04"
+      ],
+      "Body": "A scientist measures a coin that will not sit inside his dates.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_04",
+      "ChapterID": "CH09",
+      "Title": "The Coin",
+      "Scene": "The Coin",
+      "Location": "LOC_CH09",
+      "Time": "23:14",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_05"
+      ],
+      "Body": "Elias investigates the coin.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_05",
+      "ChapterID": "CH09",
+      "Title": "The Voice",
+      "Scene": "The Voice",
+      "Location": "LOC_CH09",
+      "Time": "23:15",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_06"
+      ],
+      "Body": "A scientist measures a coin that will not sit inside his dates.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_06",
+      "ChapterID": "CH09",
+      "Title": "The Passage",
+      "Scene": "The Passage",
+      "Location": "LOC_CH09",
+      "Time": "23:16",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_07"
+      ],
+      "Body": "A scientist measures a coin that will not sit inside his dates.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_07",
+      "ChapterID": "CH09",
+      "Title": "The Memory",
+      "Scene": "The Memory",
+      "Location": "LOC_CH09",
+      "Time": "23:17",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_08"
+      ],
+      "Body": "A scientist measures a coin that will not sit inside his dates.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_08",
+      "ChapterID": "CH09",
+      "Title": "The Branch",
+      "Scene": "The Branch",
+      "Location": "LOC_CH09",
+      "Time": "23:18",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [
+        "CHOICE_CH09_A",
+        "CHOICE_CH09_B"
+      ],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_09"
+      ],
+      "Body": "The earlier choice is still in the room. Changing it changes what the record holds.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_09",
+      "ChapterID": "CH09",
+      "Title": "The Figure",
+      "Scene": "The Figure",
+      "Location": "LOC_CH09",
+      "Time": "23:19",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [
+        "DLG_CH09_FIGURE"
+      ],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_10"
+      ],
+      "Body": "The stranger is present as IdentityNearlyConfirmed. He does not solve the night.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_10",
+      "ChapterID": "CH09",
+      "Title": "The Glass",
+      "Scene": "The Glass",
+      "Location": "LOC_CH09",
+      "Time": "23:20",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_11"
+      ],
+      "Body": "Elias draws the hourglass as a function and the labels fall off the axes.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_11",
+      "ChapterID": "CH09",
+      "Title": "The Threshold",
+      "Scene": "The Threshold",
+      "Location": "LOC_CH09",
+      "Time": "23:21",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "enter:LOC_CH09"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH09_CARD_12"
+      ],
+      "Body": "A scientist measures a coin that will not sit inside his dates.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH09_CARD_12",
+      "ChapterID": "CH09",
+      "Title": "The Record",
+      "Scene": "The Record",
+      "Location": "LOC_CH09",
+      "Time": "23:55",
+      "Characters": [
+        "CH_ELIAS"
+      ],
+      "Objectives": [
+        "discover:CH09_CLUE_A|CH09_CLUE_B"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [],
+      "Body": "The chapter is recorded. It is not open.",
+      "Variants": [
+        {
+          "Id": "V_CH09_A",
+          "IfAll": [
+            {
+              "Flag": "Outcome",
+              "Equals": "A"
+            }
+          ],
+          "Body": "The record keeps outcome A. The other page is no longer the one on the table."
+        },
+        {
+          "Id": "V_CH09_B",
+          "IfAll": [
+            {
+              "Flag": "Outcome",
+              "Equals": "B"
+            }
+          ],
+          "Body": "The record keeps outcome B. What was signed, trusted, or refused has changed the page."
+        }
+      ]
+    }
+  ],
+  "Clues": [
+    {
+      "ClueID": "CH09_CLUE_MAIN",
+      "ChapterID": "CH09",
+      "CardID": "CH09_CARD_01",
+      "Title": "Recorded trace",
+      "Description": "A scientist measures a coin that will not sit inside his dates.",
+      "Location": "LOC_CH09",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_ELIAS"
+      ],
+      "RelatedEvents": [
+        "TL_CH09_1"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "MEM_CH09",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CH09_CLUE_A",
+      "ChapterID": "CH09",
+      "CardID": "CH09_CARD_12",
+      "Title": "Outcome A",
+      "Description": "The page that remains when the first choice stands.",
+      "Location": "LOC_CH09",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_ELIAS"
+      ],
+      "RelatedEvents": [
+        "TL_CH09_2"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "Outcome",
+          "Equals": "A"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CH09_CLUE_B",
+      "ChapterID": "CH09",
+      "CardID": "CH09_CARD_12",
+      "Title": "Outcome B",
+      "Description": "The page that remains when the later choice stands.",
+      "Location": "LOC_CH09",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_ELIAS"
+      ],
+      "RelatedEvents": [
+        "TL_CH09_2"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "Outcome",
+          "Equals": "B"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    }
+  ],
+  "Dialogue": [
+    {
+      "DialogueID": "DLG_CH09_FIGURE",
+      "Speaker": "CH_STRANGER",
+      "Text": "You don't have much time.",
+      "Choices": [
+        {
+          "ChoiceID": "CHOICE_CH09_A",
+          "Text": "Stay with what was asked.",
+          "BranchGroup": "BRANCH_OUTCOME",
+          "ConsequenceID": "CONS_CH09_A",
+          "NextNode": "DLG_CH09_RESP_A",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_CH09_B",
+          "Text": "Leave it for later.",
+          "BranchGroup": "BRANCH_OUTCOME",
+          "ConsequenceID": "CONS_CH09_B",
+          "NextNode": "DLG_CH09_RESP_B",
+          "Requirements": []
+        }
+      ],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_CH09_RESP_A",
+      "Speaker": "CH_STRANGER",
+      "Text": "Then the page will keep your hand.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_CH09_RESP_B",
+      "Speaker": "CH_STRANGER",
+      "Text": "Later is how a name goes missing.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    }
+  ],
+  "Consequences": [
+    {
+      "Id": "CONS_CH09_A",
+      "SetFlags": {
+        "Outcome": "A"
+      },
+      "Soul": {
+        "Empathy": 1
+      },
+      "RevealClues": [
+        "CH09_CLUE_A"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": true,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_CH09_B",
+      "SetFlags": {
+        "Outcome": "B"
+      },
+      "Soul": {
+        "Courage": 1
+      },
+      "RevealClues": [
+        "CH09_CLUE_B"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    }
+  ],
+  "Memories": [
+    {
+      "MemoryID": "MEM_CH09",
+      "ChapterID": "CH09",
+      "CardID": "CH09_CARD_07",
+      "QuestionAnswered": "Elias Hart was already holding the thread this chapter exists to remember.",
+      "QuestionOpened": "What the coin was doing in this room is not yet playable.",
+      "RequiredClue": "CH09_CLUE_MAIN",
+      "TimelineEventID": "TL_CH09_1",
+      "EntryLocationId": "LOC_CH09",
+      "EntryPosition": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "HoldLine": "The memory is still holding something.",
+      "Playable": false
+    }
+  ],
+  "Timeline": [
+    {
+      "EventID": "TL_CH09_1",
+      "ChapterID": "CH09",
+      "Time": "23:10",
+      "Title": "First mark",
+      "LocationId": "LOC_CH09",
+      "Position": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": true,
+      "Branches": [],
+      "UnlockOnClue": "CH09_CLUE_MAIN"
+    },
+    {
+      "EventID": "TL_CH09_2",
+      "ChapterID": "CH09",
+      "Time": "23:30",
+      "Title": "The branch",
+      "LocationId": "LOC_CH09",
+      "Position": {
+        "X": 500,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": true,
+      "Branches": [
+        {
+          "ChoiceID": "CHOICE_CH09_A",
+          "Label": "STAY"
+        },
+        {
+          "ChoiceID": "CHOICE_CH09_B",
+          "Label": "LEAVE"
+        }
+      ],
+      "UnlockOnClue": ""
+    },
+    {
+      "EventID": "TL_CH09_3",
+      "ChapterID": "CH09",
+      "Time": "23:55",
+      "Title": "The record",
+      "LocationId": "LOC_CH09",
+      "Position": {
+        "X": 700,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": false,
+      "Branches": [],
+      "UnlockOnClue": ""
+    }
+  ],
+  "Interactables": [
+    {
+      "Id": "INT_CH09_NOTE",
+      "LocationId": "LOC_CH09",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Recorded note",
+      "InspectText": "A scientist measures a coin that will not sit inside his dates.",
+      "ClueID": "CH09_CLUE_MAIN",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 500,
+        "Y": 450,
+        "Z": 90
+      },
+      "Scale": {
+        "X": 0.3,
+        "Y": 0.3,
+        "Z": 0.3
+      },
+      "Mesh": "Cube",
+      "Color": "1A1C22",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH09_CARD_01",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    }
+  ],
+  "MusicIdentity": "stub",
+  "MusicLayers": [
+    "rain",
+    "piano"
+  ]
+}
