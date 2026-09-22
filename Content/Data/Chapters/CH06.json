@@ -1,0 +1,772 @@
+{
+  "ChapterID": "CH06",
+  "Title": "Ambition / Sacrifice",
+  "Logline": "A chef serves the room and misses the chair that mattered.",
+  "Playable": false,
+  "ProtagonistId": "CH_MARCO",
+  "Theme": "Ambition / Sacrifice",
+  "ColourSaturation": 0.3,
+  "Clock": "23:47",
+  "CoinBeat": "Marco receives the coin.",
+  "HourglassBeat": "Marco's kitchen timer is an hourglass he never turns.",
+  "StrangerStage": "HistoricalReference",
+  "CrossChapterRefs": [
+    {
+      "Id": "CH06_COIN",
+      "TargetChapter": "ALL",
+      "Kind": "coin",
+      "Note": "Marco receives the coin as a tip."
+    },
+    {
+      "Id": "CH06_GLASS",
+      "TargetChapter": "ALL",
+      "Kind": "hourglass",
+      "Note": "The kitchen timer is an hourglass he never turns."
+    },
+    {
+      "Id": "CH06_SOFIA",
+      "TargetChapter": "CH07",
+      "Kind": "symbol",
+      "Note": "Sofia's banquet ticket is on the pass."
+    },
+    {
+      "Id": "CH06_ELIAS",
+      "TargetChapter": "CH09",
+      "Kind": "figure",
+      "Note": "Elias has a standing table and does not eat."
+    },
+    {
+      "Id": "CH06_HIST",
+      "TargetChapter": "ALL",
+      "Kind": "phrase",
+      "Note": "A 1920s clipping mentions a server who does not age."
+    }
+  ],
+  "Locations": [
+    {
+      "LocationId": "LOC_CH06",
+      "Name": "Marco — recorded room",
+      "Description": "A chef serves the room and misses the chair that mattered.",
+      "Origin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "SizeX": 1200,
+      "SizeY": 900,
+      "Height": 400,
+      "Corridor": false,
+      "OpenEast": false,
+      "OpenWest": false,
+      "OpenNorth": false,
+      "OpenSouth": false,
+      "Spawn": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "SpawnYaw": 0,
+      "Props": [],
+      "Lights": [
+        {
+          "Position": {
+            "X": 400,
+            "Y": 400,
+            "Z": 250
+          },
+          "Color": "7F97A8",
+          "Intensity": 800,
+          "Radius": 600
+        }
+      ]
+    }
+  ],
+  "Cards": [
+    {
+      "CardID": "CH06_CARD_01",
+      "ChapterID": "CH06",
+      "Title": "The Hour",
+      "Scene": "The Hour",
+      "Location": "LOC_CH06",
+      "Time": "23:11",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_02"
+      ],
+      "Body": "A chef serves the room and misses the chair that mattered.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_02",
+      "ChapterID": "CH06",
+      "Title": "The Room",
+      "Scene": "The Room",
+      "Location": "LOC_CH06",
+      "Time": "23:12",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_03"
+      ],
+      "Body": "A chef serves the room and misses the chair that mattered.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_03",
+      "ChapterID": "CH06",
+      "Title": "The Paper",
+      "Scene": "The Paper",
+      "Location": "LOC_CH06",
+      "Time": "23:13",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_04"
+      ],
+      "Body": "A chef serves the room and misses the chair that mattered.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_04",
+      "ChapterID": "CH06",
+      "Title": "The Coin",
+      "Scene": "The Coin",
+      "Location": "LOC_CH06",
+      "Time": "23:14",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_05"
+      ],
+      "Body": "Marco receives the coin.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_05",
+      "ChapterID": "CH06",
+      "Title": "The Voice",
+      "Scene": "The Voice",
+      "Location": "LOC_CH06",
+      "Time": "23:15",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_06"
+      ],
+      "Body": "A chef serves the room and misses the chair that mattered.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_06",
+      "ChapterID": "CH06",
+      "Title": "The Passage",
+      "Scene": "The Passage",
+      "Location": "LOC_CH06",
+      "Time": "23:16",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_07"
+      ],
+      "Body": "A chef serves the room and misses the chair that mattered.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_07",
+      "ChapterID": "CH06",
+      "Title": "The Memory",
+      "Scene": "The Memory",
+      "Location": "LOC_CH06",
+      "Time": "23:17",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_08"
+      ],
+      "Body": "A chef serves the room and misses the chair that mattered.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_08",
+      "ChapterID": "CH06",
+      "Title": "The Branch",
+      "Scene": "The Branch",
+      "Location": "LOC_CH06",
+      "Time": "23:18",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [
+        "CHOICE_CH06_A",
+        "CHOICE_CH06_B"
+      ],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_09"
+      ],
+      "Body": "The earlier choice is still in the room. Changing it changes what the record holds.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_09",
+      "ChapterID": "CH06",
+      "Title": "The Figure",
+      "Scene": "The Figure",
+      "Location": "LOC_CH06",
+      "Time": "23:19",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [
+        "DLG_CH06_FIGURE"
+      ],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_10"
+      ],
+      "Body": "The stranger is present as HistoricalReference. He does not solve the night.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_10",
+      "ChapterID": "CH06",
+      "Title": "The Glass",
+      "Scene": "The Glass",
+      "Location": "LOC_CH06",
+      "Time": "23:20",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_11"
+      ],
+      "Body": "Marco's kitchen timer is an hourglass he never turns.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_11",
+      "ChapterID": "CH06",
+      "Title": "The Threshold",
+      "Scene": "The Threshold",
+      "Location": "LOC_CH06",
+      "Time": "23:21",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "enter:LOC_CH06"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH06_CARD_12"
+      ],
+      "Body": "A chef serves the room and misses the chair that mattered.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH06_CARD_12",
+      "ChapterID": "CH06",
+      "Title": "The Record",
+      "Scene": "The Record",
+      "Location": "LOC_CH06",
+      "Time": "23:55",
+      "Characters": [
+        "CH_MARCO"
+      ],
+      "Objectives": [
+        "discover:CH06_CLUE_A|CH06_CLUE_B"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [],
+      "Body": "The chapter is recorded. It is not open.",
+      "Variants": [
+        {
+          "Id": "V_CH06_A",
+          "IfAll": [
+            {
+              "Flag": "Outcome",
+              "Equals": "A"
+            }
+          ],
+          "Body": "The record keeps outcome A. The other page is no longer the one on the table."
+        },
+        {
+          "Id": "V_CH06_B",
+          "IfAll": [
+            {
+              "Flag": "Outcome",
+              "Equals": "B"
+            }
+          ],
+          "Body": "The record keeps outcome B. What was signed, trusted, or refused has changed the page."
+        }
+      ]
+    }
+  ],
+  "Clues": [
+    {
+      "ClueID": "CH06_CLUE_MAIN",
+      "ChapterID": "CH06",
+      "CardID": "CH06_CARD_01",
+      "Title": "Recorded trace",
+      "Description": "A chef serves the room and misses the chair that mattered.",
+      "Location": "LOC_CH06",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_MARCO"
+      ],
+      "RelatedEvents": [
+        "TL_CH06_1"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "MEM_CH06",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CH06_CLUE_A",
+      "ChapterID": "CH06",
+      "CardID": "CH06_CARD_12",
+      "Title": "Outcome A",
+      "Description": "The page that remains when the first choice stands.",
+      "Location": "LOC_CH06",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_MARCO"
+      ],
+      "RelatedEvents": [
+        "TL_CH06_2"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "Outcome",
+          "Equals": "A"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CH06_CLUE_B",
+      "ChapterID": "CH06",
+      "CardID": "CH06_CARD_12",
+      "Title": "Outcome B",
+      "Description": "The page that remains when the later choice stands.",
+      "Location": "LOC_CH06",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_MARCO"
+      ],
+      "RelatedEvents": [
+        "TL_CH06_2"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "Outcome",
+          "Equals": "B"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    }
+  ],
+  "Dialogue": [
+    {
+      "DialogueID": "DLG_CH06_FIGURE",
+      "Speaker": "CH_STRANGER",
+      "Text": "You don't have much time.",
+      "Choices": [
+        {
+          "ChoiceID": "CHOICE_CH06_A",
+          "Text": "Stay with what was asked.",
+          "BranchGroup": "BRANCH_OUTCOME",
+          "ConsequenceID": "CONS_CH06_A",
+          "NextNode": "DLG_CH06_RESP_A",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_CH06_B",
+          "Text": "Leave it for later.",
+          "BranchGroup": "BRANCH_OUTCOME",
+          "ConsequenceID": "CONS_CH06_B",
+          "NextNode": "DLG_CH06_RESP_B",
+          "Requirements": []
+        }
+      ],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_CH06_RESP_A",
+      "Speaker": "CH_STRANGER",
+      "Text": "Then the page will keep your hand.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_CH06_RESP_B",
+      "Speaker": "CH_STRANGER",
+      "Text": "Later is how a name goes missing.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    }
+  ],
+  "Consequences": [
+    {
+      "Id": "CONS_CH06_A",
+      "SetFlags": {
+        "Outcome": "A"
+      },
+      "Soul": {
+        "Empathy": 1
+      },
+      "RevealClues": [
+        "CH06_CLUE_A"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": true,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_CH06_B",
+      "SetFlags": {
+        "Outcome": "B"
+      },
+      "Soul": {
+        "Courage": 1
+      },
+      "RevealClues": [
+        "CH06_CLUE_B"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    }
+  ],
+  "Memories": [
+    {
+      "MemoryID": "MEM_CH06",
+      "ChapterID": "CH06",
+      "CardID": "CH06_CARD_07",
+      "QuestionAnswered": "Marco was already holding the thread this chapter exists to remember.",
+      "QuestionOpened": "What the coin was doing in this room is not yet playable.",
+      "RequiredClue": "CH06_CLUE_MAIN",
+      "TimelineEventID": "TL_CH06_1",
+      "EntryLocationId": "LOC_CH06",
+      "EntryPosition": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "HoldLine": "The memory is still holding something.",
+      "Playable": false
+    }
+  ],
+  "Timeline": [
+    {
+      "EventID": "TL_CH06_1",
+      "ChapterID": "CH06",
+      "Time": "23:10",
+      "Title": "First mark",
+      "LocationId": "LOC_CH06",
+      "Position": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": true,
+      "Branches": [],
+      "UnlockOnClue": "CH06_CLUE_MAIN"
+    },
+    {
+      "EventID": "TL_CH06_2",
+      "ChapterID": "CH06",
+      "Time": "23:30",
+      "Title": "The branch",
+      "LocationId": "LOC_CH06",
+      "Position": {
+        "X": 500,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": true,
+      "Branches": [
+        {
+          "ChoiceID": "CHOICE_CH06_A",
+          "Label": "STAY"
+        },
+        {
+          "ChoiceID": "CHOICE_CH06_B",
+          "Label": "LEAVE"
+        }
+      ],
+      "UnlockOnClue": ""
+    },
+    {
+      "EventID": "TL_CH06_3",
+      "ChapterID": "CH06",
+      "Time": "23:55",
+      "Title": "The record",
+      "LocationId": "LOC_CH06",
+      "Position": {
+        "X": 700,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": false,
+      "Branches": [],
+      "UnlockOnClue": ""
+    }
+  ],
+  "Interactables": [
+    {
+      "Id": "INT_CH06_NOTE",
+      "LocationId": "LOC_CH06",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Recorded note",
+      "InspectText": "A chef serves the room and misses the chair that mattered.",
+      "ClueID": "CH06_CLUE_MAIN",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 500,
+        "Y": 450,
+        "Z": 90
+      },
+      "Scale": {
+        "X": 0.3,
+        "Y": 0.3,
+        "Z": 0.3
+      },
+      "Mesh": "Cube",
+      "Color": "1A1C22",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH06_CARD_01",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    }
+  ],
+  "MusicIdentity": "stub",
+  "MusicLayers": [
+    "rain",
+    "piano"
+  ]
+}

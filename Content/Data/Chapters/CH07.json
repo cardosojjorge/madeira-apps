@@ -1,0 +1,766 @@
+{
+  "ChapterID": "CH07",
+  "Title": "Sacrifice",
+  "Logline": "An athlete spends a body the note already asked her to keep.",
+  "Playable": false,
+  "ProtagonistId": "CH_SOFIA",
+  "Theme": "Sacrifice",
+  "ColourSaturation": 0.34,
+  "Clock": "23:47",
+  "CoinBeat": "Sofia finds the coin.",
+  "HourglassBeat": "The stadium clock is painted as an hourglass over the final lap.",
+  "StrangerStage": "DirectInteraction",
+  "CrossChapterRefs": [
+    {
+      "Id": "CH07_COIN",
+      "TargetChapter": "ALL",
+      "Kind": "coin",
+      "Note": "Sofia finds the coin in her locker."
+    },
+    {
+      "Id": "CH07_GLASS",
+      "TargetChapter": "ALL",
+      "Kind": "hourglass",
+      "Note": "The stadium clock is painted as an hourglass."
+    },
+    {
+      "Id": "CH07_ELENA",
+      "TargetChapter": "CH04",
+      "Kind": "symbol",
+      "Note": "Elena's note is taped inside the locker."
+    },
+    {
+      "Id": "CH07_MARCO",
+      "TargetChapter": "CH06",
+      "Kind": "location",
+      "Note": "The fundraiser dinner was Marco's."
+    }
+  ],
+  "Locations": [
+    {
+      "LocationId": "LOC_CH07",
+      "Name": "Sofia — recorded room",
+      "Description": "An athlete spends a body the note already asked her to keep.",
+      "Origin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "SizeX": 1200,
+      "SizeY": 900,
+      "Height": 400,
+      "Corridor": false,
+      "OpenEast": false,
+      "OpenWest": false,
+      "OpenNorth": false,
+      "OpenSouth": false,
+      "Spawn": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "SpawnYaw": 0,
+      "Props": [],
+      "Lights": [
+        {
+          "Position": {
+            "X": 400,
+            "Y": 400,
+            "Z": 250
+          },
+          "Color": "7F97A8",
+          "Intensity": 800,
+          "Radius": 600
+        }
+      ]
+    }
+  ],
+  "Cards": [
+    {
+      "CardID": "CH07_CARD_01",
+      "ChapterID": "CH07",
+      "Title": "The Hour",
+      "Scene": "The Hour",
+      "Location": "LOC_CH07",
+      "Time": "23:11",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_02"
+      ],
+      "Body": "An athlete spends a body the note already asked her to keep.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_02",
+      "ChapterID": "CH07",
+      "Title": "The Room",
+      "Scene": "The Room",
+      "Location": "LOC_CH07",
+      "Time": "23:12",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_03"
+      ],
+      "Body": "An athlete spends a body the note already asked her to keep.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_03",
+      "ChapterID": "CH07",
+      "Title": "The Paper",
+      "Scene": "The Paper",
+      "Location": "LOC_CH07",
+      "Time": "23:13",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_04"
+      ],
+      "Body": "An athlete spends a body the note already asked her to keep.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_04",
+      "ChapterID": "CH07",
+      "Title": "The Coin",
+      "Scene": "The Coin",
+      "Location": "LOC_CH07",
+      "Time": "23:14",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_05"
+      ],
+      "Body": "Sofia finds the coin.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_05",
+      "ChapterID": "CH07",
+      "Title": "The Voice",
+      "Scene": "The Voice",
+      "Location": "LOC_CH07",
+      "Time": "23:15",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_06"
+      ],
+      "Body": "An athlete spends a body the note already asked her to keep.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_06",
+      "ChapterID": "CH07",
+      "Title": "The Passage",
+      "Scene": "The Passage",
+      "Location": "LOC_CH07",
+      "Time": "23:16",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_07"
+      ],
+      "Body": "An athlete spends a body the note already asked her to keep.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_07",
+      "ChapterID": "CH07",
+      "Title": "The Memory",
+      "Scene": "The Memory",
+      "Location": "LOC_CH07",
+      "Time": "23:17",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_08"
+      ],
+      "Body": "An athlete spends a body the note already asked her to keep.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_08",
+      "ChapterID": "CH07",
+      "Title": "The Branch",
+      "Scene": "The Branch",
+      "Location": "LOC_CH07",
+      "Time": "23:18",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [
+        "CHOICE_CH07_A",
+        "CHOICE_CH07_B"
+      ],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_09"
+      ],
+      "Body": "The earlier choice is still in the room. Changing it changes what the record holds.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_09",
+      "ChapterID": "CH07",
+      "Title": "The Figure",
+      "Scene": "The Figure",
+      "Location": "LOC_CH07",
+      "Time": "23:19",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [
+        "DLG_CH07_FIGURE"
+      ],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_10"
+      ],
+      "Body": "The stranger is present as DirectInteraction. He does not solve the night.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_10",
+      "ChapterID": "CH07",
+      "Title": "The Glass",
+      "Scene": "The Glass",
+      "Location": "LOC_CH07",
+      "Time": "23:20",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_11"
+      ],
+      "Body": "The stadium clock is painted as an hourglass over the final lap.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_11",
+      "ChapterID": "CH07",
+      "Title": "The Threshold",
+      "Scene": "The Threshold",
+      "Location": "LOC_CH07",
+      "Time": "23:21",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "enter:LOC_CH07"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [
+        "CH07_CARD_12"
+      ],
+      "Body": "An athlete spends a body the note already asked her to keep.",
+      "Variants": []
+    },
+    {
+      "CardID": "CH07_CARD_12",
+      "ChapterID": "CH07",
+      "Title": "The Record",
+      "Scene": "The Record",
+      "Location": "LOC_CH07",
+      "Time": "23:55",
+      "Characters": [
+        "CH_SOFIA"
+      ],
+      "Objectives": [
+        "discover:CH07_CLUE_A|CH07_CLUE_B"
+      ],
+      "Clues": [],
+      "Dialogue": [],
+      "Choices": [],
+      "Flashbacks": [],
+      "Consequences": [],
+      "Audio": [
+        "rain",
+        "city"
+      ],
+      "Camera": "OverShoulder",
+      "NextCards": [],
+      "Body": "The chapter is recorded. It is not open.",
+      "Variants": [
+        {
+          "Id": "V_CH07_A",
+          "IfAll": [
+            {
+              "Flag": "Outcome",
+              "Equals": "A"
+            }
+          ],
+          "Body": "The record keeps outcome A. The other page is no longer the one on the table."
+        },
+        {
+          "Id": "V_CH07_B",
+          "IfAll": [
+            {
+              "Flag": "Outcome",
+              "Equals": "B"
+            }
+          ],
+          "Body": "The record keeps outcome B. What was signed, trusted, or refused has changed the page."
+        }
+      ]
+    }
+  ],
+  "Clues": [
+    {
+      "ClueID": "CH07_CLUE_MAIN",
+      "ChapterID": "CH07",
+      "CardID": "CH07_CARD_01",
+      "Title": "Recorded trace",
+      "Description": "An athlete spends a body the note already asked her to keep.",
+      "Location": "LOC_CH07",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_SOFIA"
+      ],
+      "RelatedEvents": [
+        "TL_CH07_1"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "MEM_CH07",
+      "Importance": "major",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": false,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CH07_CLUE_A",
+      "ChapterID": "CH07",
+      "CardID": "CH07_CARD_12",
+      "Title": "Outcome A",
+      "Description": "The page that remains when the first choice stands.",
+      "Location": "LOC_CH07",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_SOFIA"
+      ],
+      "RelatedEvents": [
+        "TL_CH07_2"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "Outcome",
+          "Equals": "A"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    },
+    {
+      "ClueID": "CH07_CLUE_B",
+      "ChapterID": "CH07",
+      "CardID": "CH07_CARD_12",
+      "Title": "Outcome B",
+      "Description": "The page that remains when the later choice stands.",
+      "Location": "LOC_CH07",
+      "DiscoveryMethod": "documentary",
+      "RelatedCharacters": [
+        "CH_SOFIA"
+      ],
+      "RelatedEvents": [
+        "TL_CH07_2"
+      ],
+      "RelatedClues": [],
+      "MemoryReference": "",
+      "Importance": "critical",
+      "Optional": false,
+      "Hidden": false,
+      "BranchExclusive": true,
+      "CrossChapter": false,
+      "CrossTarget": "",
+      "ActiveIf": [
+        {
+          "Flag": "Outcome",
+          "Equals": "B"
+        }
+      ],
+      "GrantFlag": "",
+      "GrantValue": "",
+      "Categories": [
+        "Clues"
+      ],
+      "SoulOnDiscover": {}
+    }
+  ],
+  "Dialogue": [
+    {
+      "DialogueID": "DLG_CH07_FIGURE",
+      "Speaker": "CH_STRANGER",
+      "Text": "You don't have much time.",
+      "Choices": [
+        {
+          "ChoiceID": "CHOICE_CH07_A",
+          "Text": "Stay with what was asked.",
+          "BranchGroup": "BRANCH_OUTCOME",
+          "ConsequenceID": "CONS_CH07_A",
+          "NextNode": "DLG_CH07_RESP_A",
+          "Requirements": []
+        },
+        {
+          "ChoiceID": "CHOICE_CH07_B",
+          "Text": "Leave it for later.",
+          "BranchGroup": "BRANCH_OUTCOME",
+          "ConsequenceID": "CONS_CH07_B",
+          "NextNode": "DLG_CH07_RESP_B",
+          "Requirements": []
+        }
+      ],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_CH07_RESP_A",
+      "Speaker": "CH_STRANGER",
+      "Text": "Then the page will keep your hand.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    },
+    {
+      "DialogueID": "DLG_CH07_RESP_B",
+      "Speaker": "CH_STRANGER",
+      "Text": "Later is how a name goes missing.",
+      "Choices": [],
+      "Requirements": [],
+      "Consequences": [],
+      "ClueUnlocks": [],
+      "RelationshipChanges": {},
+      "SoulChanges": {},
+      "NextNode": "",
+      "Camera": "",
+      "Reveal": false
+    }
+  ],
+  "Consequences": [
+    {
+      "Id": "CONS_CH07_A",
+      "SetFlags": {
+        "Outcome": "A"
+      },
+      "Soul": {
+        "Empathy": 1
+      },
+      "RevealClues": [
+        "CH07_CLUE_A"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": true,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    },
+    {
+      "Id": "CONS_CH07_B",
+      "SetFlags": {
+        "Outcome": "B"
+      },
+      "Soul": {
+        "Courage": 1
+      },
+      "RevealClues": [
+        "CH07_CLUE_B"
+      ],
+      "UnlockTimeline": [],
+      "Relationship": {},
+      "HelpedNpc": false,
+      "OptionalDialogue": false,
+      "NotebookFact": ""
+    }
+  ],
+  "Memories": [
+    {
+      "MemoryID": "MEM_CH07",
+      "ChapterID": "CH07",
+      "CardID": "CH07_CARD_07",
+      "QuestionAnswered": "Sofia was already holding the thread this chapter exists to remember.",
+      "QuestionOpened": "What the coin was doing in this room is not yet playable.",
+      "RequiredClue": "CH07_CLUE_MAIN",
+      "TimelineEventID": "TL_CH07_1",
+      "EntryLocationId": "LOC_CH07",
+      "EntryPosition": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "HoldLine": "The memory is still holding something.",
+      "Playable": false
+    }
+  ],
+  "Timeline": [
+    {
+      "EventID": "TL_CH07_1",
+      "ChapterID": "CH07",
+      "Time": "23:10",
+      "Title": "First mark",
+      "LocationId": "LOC_CH07",
+      "Position": {
+        "X": 300,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": true,
+      "Branches": [],
+      "UnlockOnClue": "CH07_CLUE_MAIN"
+    },
+    {
+      "EventID": "TL_CH07_2",
+      "ChapterID": "CH07",
+      "Time": "23:30",
+      "Title": "The branch",
+      "LocationId": "LOC_CH07",
+      "Position": {
+        "X": 500,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": true,
+      "Branches": [
+        {
+          "ChoiceID": "CHOICE_CH07_A",
+          "Label": "STAY"
+        },
+        {
+          "ChoiceID": "CHOICE_CH07_B",
+          "Label": "LEAVE"
+        }
+      ],
+      "UnlockOnClue": ""
+    },
+    {
+      "EventID": "TL_CH07_3",
+      "ChapterID": "CH07",
+      "Time": "23:55",
+      "Title": "The record",
+      "LocationId": "LOC_CH07",
+      "Position": {
+        "X": 700,
+        "Y": 400,
+        "Z": 120
+      },
+      "StartsLocked": false,
+      "Branches": [],
+      "UnlockOnClue": ""
+    }
+  ],
+  "Interactables": [
+    {
+      "Id": "INT_CH07_NOTE",
+      "LocationId": "LOC_CH07",
+      "Kind": "Clue",
+      "Prompt": "E — INSPECT",
+      "Title": "Recorded note",
+      "InspectText": "An athlete spends a body the note already asked her to keep.",
+      "ClueID": "CH07_CLUE_MAIN",
+      "DialogueID": "",
+      "MemoryID": "",
+      "TimelineEventID": "",
+      "Position": {
+        "X": 500,
+        "Y": 450,
+        "Z": 90
+      },
+      "Scale": {
+        "X": 0.3,
+        "Y": 0.3,
+        "Z": 0.3
+      },
+      "Mesh": "Cube",
+      "Color": "1A1C22",
+      "PresentIf": [],
+      "AbsentIf": [],
+      "RequiredCard": "CH07_CARD_01",
+      "Hidden": false,
+      "BlocksPlayer": false,
+      "OnlyInFlashback": false,
+      "FlashbackMemoryID": "",
+      "TraceStyle": "",
+      "Action": ""
+    }
+  ],
+  "MusicIdentity": "stub",
+  "MusicLayers": [
+    "rain",
+    "piano"
+  ]
+}

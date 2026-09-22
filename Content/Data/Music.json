@@ -1,0 +1,32 @@
+{
+  "Layers": [
+    "rain",
+    "wind",
+    "footsteps",
+    "city",
+    "traffic",
+    "clocks",
+    "doors",
+    "electrical_hum",
+    "phones",
+    "paper",
+    "whispers",
+    "jazz",
+    "piano",
+    "strings"
+  ],
+  "Identities": {
+    "CH_ADRIAN": "piano_low",
+    "CH_MAYA": "soft_keys",
+    "CH_DANIEL": "muted_brass",
+    "CH_ELENA": "single_cello",
+    "CH_LUCAS": "travelling_guitar",
+    "CH_MARCO": "kitchen_jazz",
+    "CH_SOFIA": "pulse_drums",
+    "CH_NINA": "processed_voice",
+    "CH_ELIAS": "thin_oscillator",
+    "CH_CLARA": "worn_strings",
+    "CH_STRANGER": "motif_fragment"
+  },
+  "StrangerMotifFull": "LOCKED_STEP_16"
+}
