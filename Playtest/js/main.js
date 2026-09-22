@@ -878,6 +878,14 @@ function frame(now) {
   requestAnimationFrame(frame);
 }
 
+function activeRows() {
+  if (screen === "menu") return [...document.querySelectorAll("#menu-list button")];
+  if (screen === "quit") return [...document.querySelectorAll("#quit-list button")];
+  if (screen === "ending") return [...document.querySelectorAll("#end-list button")];
+  if (screen === "settings") return [...document.querySelectorAll("#sheet .settings-row")];
+  return [...document.querySelectorAll("#sheet .sheet-list button")];
+}
+
 function onKey(event) {
   if (event.repeat && ["Space", "Enter"].includes(event.code)) return;
   keys.add(event.code);
@@ -954,9 +962,9 @@ function onKey(event) {
     return;
   }
   if (menuish && (event.code === "ArrowUp" || event.code === "ArrowDown")) {
-    const count = document.querySelectorAll(".sheet-list button, .menu-list button, .settings-row").length;
-    shell.moveSelection(event.code === "ArrowDown" ? 1 : -1, count || 1);
-    rerender();
+    const nodes = activeRows();
+    shell.moveSelection(event.code === "ArrowDown" ? 1 : -1, nodes.length || 1);
+    nodes.forEach((node, index) => node.classList.toggle("on", index === shell.selected));
     return;
   }
   if (menuish && (event.code === "Enter" || event.code === "Space")) confirm();
