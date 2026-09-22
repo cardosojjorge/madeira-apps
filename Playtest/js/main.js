@@ -773,7 +773,7 @@ function confirm() {
   }
   if (screen === "quit") showMain();
   else if (screen === "chapters" || screen === "evidence" || screen === "evidence-entry" || screen === "notebook" || screen === "notebook-entry" || screen === "pause") {
-    document.querySelector(".sheet-list button.on, .menu-list button.on")?.click();
+    document.querySelector("#sheet .sheet-list button.on")?.click();
   }
 }
 
